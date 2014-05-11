@@ -1,0 +1,27 @@
+
+.app-title {
+  font-size: 375%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.talk-title {
+  display: block;
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name {
+  display: block;
+  text-align: center;
+  color: #00f;
+}
+
+.detail {
+  padding: 10px 10px;
+  background: #ffffee;
+  border: 1px solid #999;
+  border-radius: 12px;
+}
+
