@@ -26,3 +26,39 @@
 }
 
 
+table.schedule tr.header {
+  font-size: 200%;
+  font-size: 150%;
+  background: #efefef;
+}
+
+table.schedule td {
+  font-size: 125%;
+  border-bottom: solid 1px #efefef;
+}
+table.schedule th {
+  text-align: center;
+  font-size: 150%;
+}
+
+table.schedule td {
+  padding: 0px 20px;
+}
+
+table.schedule tr.break {
+  background: #EBFFD5;
+  font-weight: bold;
+}
+
+table.schedule tr.lunch, tr.welcome {
+  background: #B9F7F7;
+  font-weight: bold;
+}
+
+table.schedule td.t {
+  width: 190px;
+}
+
+table.schedule td.ttl {
+  font-style: italic;
+}
