@@ -62,3 +62,14 @@ table.schedule td.t {
 table.schedule td.ttl {
   font-style: italic;
 }
+
+span.sips {
+  color: black;
+  font-size: 300%;
+  height: 300px;
+  line-height: 300px;      
+  display: inline-block;
+  vertical-align: bottom;
+  /*border: solid 1px #333;*/
+}
+
