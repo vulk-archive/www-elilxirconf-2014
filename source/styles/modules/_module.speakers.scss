@@ -1,0 +1,112 @@
+.keynote-speakers {
+  // LOCAL VARIABLES
+  $keynote-accent-color: $ufo-green;
+  $keynote-border-color: darken(transparentize(#5dac5d, .8), 30);
+  $keynote-border: 1px solid $keynote-border-color;
+
+  @include clearfix;
+
+  @include media($large-screen) {
+    @include row(block);
+  }
+
+  .keynote {
+    @include media($large-screen) {
+      @include span-columns(6);
+    }
+
+    .keynote-info {
+      // @include clearfix;
+
+      // @include media($large-screen) {
+      //   margin-bottom : em(18);
+      // }
+
+      figure {
+        display : block;
+        margin : 0;
+        padding : 0;
+        position : relative;
+        text-align : center;
+
+        @include media($large-screen) {
+          @include span-columns(3 of 6);
+        }
+
+        img {
+          border-radius : 50%;
+          max-width : 50%;
+
+          @include media($large-screen) {
+            border-radius : 0;
+            max-width : 100% !important;
+          }
+        }
+
+        figcaption {
+          bottom : em(6);
+          left : 50%;
+          margin-left : em(-30);
+          position : absolute;
+
+          a {
+            background : transparentize($ghostwhite, 0.18);
+            color : #333;
+            line-height : 18px;
+            padding : em(6);
+            @include transition(background 0.3s);
+
+            &:hover {
+              background : $ghostwhite;
+              box-shadow : 0 1px 1px rgba(0,0,0,0.09);
+            }
+          }
+        }
+      }
+
+      .keynote-meta {
+        padding: em(9) em(9) 0;
+
+        @include media($large-screen) {
+          @include span-columns(3 of 6);
+          text-align : right;
+        }
+
+        h1 {
+          margin-bottom : 0;
+        }
+
+        h4 {
+          background: $keynote-accent-color;
+          color: white;
+          display: inline-block;
+          font-size: .75em;
+          font-weight: 800;
+          margin-bottom : em(9);
+          padding: 3px 8px;
+          text-transform: uppercase;
+
+          @include media($large-screen) {
+            margin-bottom : em(18);
+          }
+        }
+      }
+    }
+
+    .keynote-bio {
+      @include media($large-screen) {
+        @include span-columns(3 of 6);
+      }
+      p {
+        color: gray;
+        margin-top : 0;
+        margin-bottom: 3em;
+        padding : 0 em(9);
+
+        @include media($large-screen) {
+          padding : 0;
+        }
+      }
+    }
+  }
+}

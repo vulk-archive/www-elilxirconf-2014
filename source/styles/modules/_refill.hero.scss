@@ -1,0 +1,70 @@
+.hero {
+  // LOCAL VARIABLES
+  $hero-background-color : darken(desaturate($vivid-violet, 18), 27);
+
+  background: $hero-background-color url(/images/backgrounds/bkg-cityscape.png) 50% 50% no-repeat;
+  background-size: cover;
+  padding-top : 4.5em;
+  padding-bottom: 4.5em;
+
+  .hero-logo img {
+    max-height: 6.3em;
+    margin-bottom: 2.7em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 3.6em;
+    margin: auto;
+    text-align: center;
+    color: $solitude;
+
+    .button {
+      @include button(simple, $base-accent-color);
+      font-size: $base-font-size / 1.08;
+      outline: none;
+      padding : 0.9em 2.7em;
+
+      @include media($large-screen) {
+        font-size: $base-font-size;
+      }
+    }
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        font-size: 1.4em;
+        font-weight : 400;
+        margin-bottom: 1.8em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+
+        em {
+          font-family : $serif;
+          font-size : 0.81em;
+          font-weight : 400;
+          // text-transform : lowercase;
+          &:last-of-type {
+            margin-right : 0.09em;
+            margin-left : 0.09em;
+          }
+        }
+      }
+
+      p {
+        margin: auto;
+        margin-bottom: 3em;
+        font-weight: 200;
+
+        @include media($large-screen) {
+          font-size: 1.2em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
