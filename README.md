@@ -8,7 +8,7 @@ For development, use alternative Procfile by ```foreman start -f Procfile.dev```
 
 Technologies used:
 
-* thoughtbot Bourbon, Neat, Bitters, and some Refills
+* thoughtbot Bourbon
 * thoughtbot Neat
 * thoughtbot Bitters
 * and some thoughtbot Refills
