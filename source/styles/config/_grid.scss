@@ -9,5 +9,5 @@ $visual-grid: true !default; // Display the base grid
 $medium-screen: em(640);
 $large-screen: em(960);
 
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
