@@ -1,97 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Jim Freeze">
-    <link rel="shortcut icon" href="/favicon.ico" />
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Questrial|Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ElixirConf 2014</title>
+  <meta name="description" content="Premier conference about Elixir (and Erlang)!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ElixirConf 2014</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/elixirconf.css">
+  <script src="scripts/vendor/modernizr.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
-  </head>
-
-<!-- NAVBAR
-================================================== -->
-  <body>
-  <!--
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">ElixirConf 2014 - Austin</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-
-                <li><a href="https://www.formstack.com/forms/?1710402-y4rOTw9FLr">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+  <header class="navigation">
+    <div class="menu-wrapper">
+      <a href="javascript:void(0)" class="logo">
+        <img src="images/branding/icon-elixirconf-small.png" alt="ElixirConf">
+      </a>
+      <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
+      <div class="nav">
+        <ul id="navigation-menu">
+          <li class="nav-link"><a href="#keynotes">Keynotes</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">About</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">Speakers</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">Schedule</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">Attending</a></li>
+          <li class="nav-link"><a href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">Register</a></li>
+        </ul>
       </div>
     </div>
--->
+  </header> <!-- header.navigation -->
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img class="img-responsive" src="/images/austin3_80.png" width="900" alt="ElixirConf in Austin">
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="images/ElixirConf_Logo_v10.png" width:"100%" alt:"ElixirConf 2014">
-              <h1>July 25-26, 2014  Austin, TX</h1>
-              <p>Registration Now Open!</p>
-              <!-- <p><a class="btn btn-lg btn-primary" href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453" role="button">Reserve your seat</a></p> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/images/lsrc3_20.png" alt="ElixirConf in Austin">
-          <div class="container">
-            <div class="carousel-caption">
-                <img src="images/ElixirConf_Logo_v10.png" width:"100%" alt:"ElixirConf 2014">
-                <h1>Venue: Norris Conference Center</h1>
-              <p>2525 W. Anderson Lane, Suite 365, Austin, Texas 78757</p>
-            </div>
-          </div>
+  <section class="hero">
+    <div class="hero-inner">
+      <a href="" class="hero-logo"><img src="images/branding/logo-elixirconf-medium.png" alt=""></a>
+      <div class="hero-copy">
+        <h1><em>The</em> Texas Conference <em>for</em> Elixir Makers.</h1>
+      </div>
+      <a class="button" href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">Register Today!</a>
+    </div>
+  </section> <!-- section.hero -->
+
+  <section class="infobar date-place">
+    <div class="constrained">
+      <div class="infobar-item date-of"><span>July 25<sup>th</sup> &ndash; 26<sup>th</sup>, 2014</span></div><!--
+   --><div class="infobar-item venue-place"><span class="venue">Norris Conference Center</span> <em>in</em> <span class="place">Austin, Texas</span></div>
+    </div>
+  </section>
+
+
+  <section class="speakers constrained" id="speakers">
+    <h1 class="heading"><span>Speakers</span></h1>
+    <div class="speaker keynote josevalim">
+      <div class="keynote-info">
+        <figure>
+          <img src="/images/speakers/keynote-josevalim.png" alt="José Valim">
+          <figcaption><a href="http://www.erlang-factory.com/upload/peopleimage/Krakow2011_JoseValim/Euruko.jpg">source</a></figcaption>
+        </figure>
+        <div class="keynote-meta">
+          <h4>Keynote Speaker</h4>
+          <h1>José Valim</h1>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+      <div class="keynote-bio">
+        <p>José Valim is a developer and the creator of the <a href="http://elixir-lang.org/">Elixir language</a>.
+        <br><br>
+        When not building Elixir, José is also a Rails Core Team member and the founder of the development group <a href="http://plataformatec.com.br/">Plataformatec</a>.</p>
+      </div>
+    </div>
+
+    <div class="speaker keynote davethomas">
+      <div class="keynote-info">
+        <figure>
+          <img src="/images/speakers/keynote-davethomas.png" alt="Dave Thomas">
+          <figcaption><a href="http://en.wikipedia.org/wiki/Dave_Thomas_(programmer)#mediaviewer/File:Dave_Thomas_speaking_at_the_Pasadena_Rails_Studio.jpg">source</a></figcaption>
+        </figure>
+        <div class="keynote-meta">
+          <h4>Keynote Speaker</h4>
+          <h1>Dave Thomas</h1>
+        </div>
+      </div>
+      <div class="keynote-bio">
+        <p>Dave Thomas is a programmer, author, and <a href="http://pragprog.com/">publisher</a>. He is the author of the <a href="http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0">Programming Ruby</a> series- first published in 2000- helping to inspire many programmers and grow the Ruby community.
+        <br><br>
+        Currently, Dave is writing <a href="http://pragprog.com/book/elixir/programming-elixir">Programming Elixir</a> in the hopes that he can help foster the same growth in the Elixir community.</p>
+      </div>
+    </div>
+  </section>
+
+  <h1>Venue: Norris Conference Center</h1>
+  <p>2525 W. Anderson Lane, Suite 365, Austin, Texas 78757</p>
 
 
 
@@ -114,13 +120,6 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/jose.jpg" height="140px" alt="José Valim">
-          <h2>José Valim</h2>
-          <p>José Valim is the creator of the <a href="http://elixir-lang.org/">Elixir language</a>.  José is also a Rails Core Team Member and the founder of <a href="http://plataformatec.com.br/">plataformatec</a>.</p>
-        </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="/images/prag_dave_thomas.jpg" height="140px" alt="Dave Thomas">
           <h2>Dave Thomas</h2>
@@ -232,28 +231,28 @@
               <div class="collapse detail">
                 <h3>Presentation</h3>
                 <p>Yale Professor Alan Perlis once wrote, “A language that doesn’t affect the way you think about programming, is not worth knowing.”</p>
-                
+
                 <p>To really appreciate the power of the actor model, no matter if you are using Go, Rust, AKKA or Erlang, you need to learn to think concurrently. Erlang has for decades been leading the way in concurrent thinking and developers from different communities and backgrounds have a lot to learn from its approach.</p>
-                
+
                 <p>This talk illustrates by example how embracing the Erlang way of thinking about problems leads to scalable and fault-tolerant designs. It will describe three ways of clustering Erlang nodes within the server side domain, describing how these systems have evolved as the concurrency model and the underlying hardware got more powerful.</p>
-                
+
                 <p>Through these case studies, we will describe how Erlang, and more specifically, concurrency was done in 1995 when the limit of processes was 30,000, with an evolution as to how concurrency is used and applied today, when the limit of simultaneous processes in the magnitude of millions per virtual machine.</p>
                 <h3>Bio</h3>
                 <p>Francesco Cesarini is the founder and technical director of <a href="http://www.erlang-solutions.com">Erlang Solutions Ltd.</a></p>
-                <p>He has used Erlang on a daily basis since 1995, starting as an intern at 
-                Ericsson’s computer science laboratory, the birthplace of Erlang. 
-                He moved on to Ericsson’s Erlang training and consulting arm working on the 
-                first release of the OTP middleware, applying it to turnkey solutions and 
+                <p>He has used Erlang on a daily basis since 1995, starting as an intern at
+                Ericsson’s computer science laboratory, the birthplace of Erlang.
+                He moved on to Ericsson’s Erlang training and consulting arm working on the
+                first release of the OTP middleware, applying it to turnkey solutions and
                 flagship telecom applications.</p>
-                <p>In 1999, soon after Erlang was released as open source, he founded Erlang Solutions. 
-                With offices in five countries, they have become the world leaders in Erlang based 
-                support, consulting, training, certification, systems development and conferences. 
-                Francesco has worked in major Erlang based projects both within and outside Ericsson, 
+                <p>In 1999, soon after Erlang was released as open source, he founded Erlang Solutions.
+                With offices in five countries, they have become the world leaders in Erlang based
+                support, consulting, training, certification, systems development and conferences.
+                Francesco has worked in major Erlang based projects both within and outside Ericsson,
                 and as Technical Director, has led the development and consulting teams at Erlang Solutions.
                 </p>
-                <p>He is also the co-author of Erlang Programming, a book published by 
-                O’Reilly and is currently co-authoring <em>Designing For Scalability With Erlang/OTP</em>. 
-                He lectures the graduate students at Oxford University. 
+                <p>He is also the co-author of Erlang Programming, a book published by
+                O’Reilly and is currently co-authoring <em>Designing For Scalability With Erlang/OTP</em>.
+                He lectures the graduate students at Oxford University.
                 You can follow his ramblings on twitter <a href="http://twitter.com/francescoc">@francescoc</a>.</p>
               </div>
             </div>
@@ -267,7 +266,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_oscon_headshot.jpg" height="140px" alt="Josh Adams">
             <h2 class="text-center">Josh&nbsp;Adams</h2>
             <div class="collapse-group">
@@ -289,7 +288,7 @@ I'm the CTO of Isotope11, a mildly successful software development company that 
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_icanmakeitbetter_reduced.jpg" height="140px" alt="Bruce Tate">
             <h2 class="text-center">Bruce&nbsp;Tate</h2>
             <div class="collapse-group">
@@ -298,7 +297,7 @@ I'm the CTO of Isotope11, a mildly successful software development company that 
               </span>
               <div class="collapse detail">
               <h3>Presentation</h3>
-              <p>The Elixir pipe is one of the most distinctive features of the new language. Pipes allow the expression of ideas as a series of transformations, which is the essence of functional programming. But sometimes pipes fail, when return values are not uniform, or when policies change. 
+              <p>The Elixir pipe is one of the most distinctive features of the new language. Pipes allow the expression of ideas as a series of transformations, which is the essence of functional programming. But sometimes pipes fail, when return values are not uniform, or when policies change.
             This talk shows how the combination of pipes and macros makes a better and more uniform experience for both API producers and consumers. Be prepared to take a detailed look at macros, how they work, and how they can play a big role in this popular programming feature, the pipe.
               </p>
               <h3>Bio</h3>
@@ -312,7 +311,7 @@ I'm the CTO of Isotope11, a mildly successful software development company that 
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_08d4b3f.jpg" height="140px" alt="Richard Bishop">
             <h2 class="text-center">Richard&nbsp;Bishop</h2>
             <div class="collapse-group">
@@ -335,7 +334,7 @@ Richard is a long time Rubyist that, like many others, has found the same joy in
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_avatar-resized.png_.png" height="140px" alt="Chris McCord">
             <h2 class="text-center">Chris&nbsp;McCord</h2>
             <div class="collapse-group">
@@ -363,7 +362,7 @@ Chris McCord is a programmer with a passion for science and building things and 
         <div class="col-md-12">
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_eric.jpg" height="140px" alt="Eric Meadows-Jonsson">
             <h2 class="text-center">Eric&nbsp;Meadows&ndash;Jönsson</h2>
             <div class="collapse-group">
@@ -387,7 +386,7 @@ In this talk I will explain how it all works and was built. We explore how Hex d
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_jtj_4031_5x7.jpg" height="140px" alt="Stephen Pallen">
             <h2 class="text-center">Stephen&nbsp;Pallen</h2>
             <div class="collapse-group">
@@ -415,13 +414,13 @@ In this talk I will explain how it all works and was built. We explore how Hex d
               </span>
               <div class="collapse detail">
                 <h3>Presentation</h3>
-                <p>sauspiel.de is Germany's (and the world's) biggest Schafkopf (a trick-taking card game https://en.wikipedia.org/wiki/Schafkopf) website with 235.000 games every day. Bold Poker (boldpokerapp.com) "replaces your deck of cards with iPhones" and is made by the same team. 
+                <p>sauspiel.de is Germany's (and the world's) biggest Schafkopf (a trick-taking card game https://en.wikipedia.org/wiki/Schafkopf) website with 235.000 games every day. Bold Poker (boldpokerapp.com) "replaces your deck of cards with iPhones" and is made by the same team.
 Both could not exist without Erlang/OTP.
                 </p>
 
                 <p>
-This talk covers the nitty-gritty details of how their game servers work. 
-I'll talk about each of the following points from a high level perspective, 
+This talk covers the nitty-gritty details of how their game servers work.
+I'll talk about each of the following points from a high level perspective,
 what we do and why and then show the interesting pieces of code that make it work:
                 </p>
 
@@ -451,7 +450,7 @@ Seasoned Rails developer who got into Erlang and recently Elixir.
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_bio2.jpg" height="140px" alt="James Smith">
             <h2 class="text-center">James&nbsp;Smith</h2>
             <div class="collapse-group">
@@ -461,7 +460,7 @@ Seasoned Rails developer who got into Erlang and recently Elixir.
               <div class="collapse detail">
                 <h3>Presentation</h3>
 <p>
-I'd love to check out and learn Elixir but I don't really have a problem that is big enough or one that Elixir is well suited for." 
+I'd love to check out and learn Elixir but I don't really have a problem that is big enough or one that Elixir is well suited for."
 </p>
 
 <p>
@@ -469,7 +468,7 @@ How many times have you heard this?
 </p>
 
 <p>
-I have been writing small command line applications using Elixir to solve some of the same kind of problems that I used to use languages like Ruby or Python for in the past and I'm loving it! 
+I have been writing small command line applications using Elixir to solve some of the same kind of problems that I used to use languages like Ruby or Python for in the past and I'm loving it!
 </p>
 
 <p>
@@ -477,7 +476,7 @@ Elixir and mix comes with great tools out of the box for writing these kind prog
 </p>
 
 <p>
-Elixir is a very expressive language that is good at solving all manner of problems in an elegant way. That means even problems where concurrency, high availability and code reloading are not important or of less of a concern. 
+Elixir is a very expressive language that is good at solving all manner of problems in an elegant way. That means even problems where concurrency, high availability and code reloading are not important or of less of a concern.
 </p>
 
 <p>
@@ -499,13 +498,13 @@ By the end of my talk I hope other people will feel the same way as I do about E
 
 
       <hr class="featurette-divider">
-      
+
       <div class="row">
         <div class="col-md-12">
 
 
           <div class="col-md-3">
-              <img class="img-circle center-block" 
+              <img class="img-circle center-block"
               src="/images/speakers/24617564_me.jpg" height="140px" alt="Filipe Varjao">
             <h2 class="text-center">Filipe&nbsp;Varjão</h2>
             <div class="collapse-group">
@@ -526,7 +525,7 @@ By the end of my talk I hope other people will feel the same way as I do about E
 
 
           <div class="col-md-3">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/speakers/24617564_me-cropped.jpg" height="140px" alt="Greg Vaughn">
             <h2 class="text-center">Greg&nbsp;Vaughn</h2>
             <div class="collapse-group">
@@ -544,9 +543,9 @@ By the end of my talk I hope other people will feel the same way as I do about E
             </div>
           </div>
 
-      
+
        <div class="col-md-3">
-         <img class="img-circle center-block" 
+         <img class="img-circle center-block"
            src="/images/speakers/24617564_n727615181_3779084_6783_400x400.jpg" height="140px" alt="Devin Torres">
          <h2 class="text-center">Devin&nbsp;Torres</h2>
          <div class="collapse-group">
@@ -589,7 +588,7 @@ By the end of my talk I hope other people will feel the same way as I do about E
         <div class="featurette-spacer">&nbsp;</div>
 
         <div class="col-md-7">
-          <h2 class="featurette-heading">Venue: 
+          <h2 class="featurette-heading">Venue:
             <a href="http://norriscenters.com/Austin/">
               <span class="text-muted">Norris Conference Center</span>
             </a>
@@ -618,24 +617,24 @@ By the end of my talk I hope other people will feel the same way as I do about E
           3612 Tudor Boulevard<br>
           Austin, Texas, USA, 78759<br>
           Tel: +1 512 231 8491<br>
-          </p> 
+          </p>
           <p>
           You can now reserve rooms in either of two ways:
           </p>
 
           <p>
-          1) By calling Hyatt Reservations at 877-242-3654, 
-            and requesting a room reservation using group code <b>G-ELIX</b>. 
-            The Reservations Agent will be able to quote availability of the group rate 
+          1) By calling Hyatt Reservations at 877-242-3654,
+            and requesting a room reservation using group code <b>G-ELIX</b>.
+            The Reservations Agent will be able to quote availability of the group rate
             on the requested dates, and reserve one of the group rooms for you.
           </p>
-           
+
           <p>
           2) By visiting <a href="http://austinarboretum.place.hyatt.com/en/hotel/home.html?corp_id=G-ELIX">Hyatt Place Austin Reservations</a>
           </p>
-           
+
           <p>
-          If no rooms are available, tweet @jimfreeze to add more rooms to the block. If you have any questions about the reservations process, please let us know. 
+          If no rooms are available, tweet @jimfreeze to add more rooms to the block. If you have any questions about the reservations process, please let us know.
           </p>
         </div>
       </div>
@@ -650,22 +649,22 @@ By the end of my talk I hope other people will feel the same way as I do about E
         <div class="col-md-12">
           <div class="col-md-3">
             <a href="http://twitter.com/elixirsips" target="_blank">
-            <img class="img-circle center-block" 
+            <img class="img-circle center-block"
               src="/images/elixirSip_logo.png" alt="Elixir Sip"> </a>
           </div>
           <div class="col-md-3">
             <a href="http://twitter.com/capitalfactory" target="_blank">
-            <img class="img center-block" 
+            <img class="img center-block"
               src="/images/capitalFactory_logo.png" alt="Capital Factory"> </a>
           </div>
           <div class="col-md-3">
             <a href="http://vulk.co" target="_blank">
-            <img class="img center-block" 
+            <img class="img center-block"
               src="/images/vulk_logo.png" alt="Vulk"></a>
           </div>
           <div class="col-md-3">
             <a href="http://plataformatec.com.br/" target="_blank">
-            <img class="img center-block" 
+            <img class="img center-block"
               src="/images/ptec-logo-eng.png" alt="Plataformatec"></a>
           </div>
         </div>
@@ -683,12 +682,12 @@ By the end of my talk I hope other people will feel the same way as I do about E
           </div>
           <div class="col-md-4">
             <a href="http://rack.to/elixirconf" target="_blank">
-            <img class="center-block" 
+            <img class="center-block"
               src="/images/Rackspace.jpg" alt="Rackspace"></a>
           </div>
           <div class="col-md-4">
             <a href="http://www.door64.com/" target="_blank">
-            <img class="center-block" 
+            <img class="center-block"
             src="/images/door64-300x109-elixirconf.png" width="250px" alt="door64"></a>
           </div>
         </div>
@@ -703,12 +702,12 @@ By the end of my talk I hope other people will feel the same way as I do about E
           </div>
           <div class="col-md-3">
             <a href="http://confreaks.com/" target="_blank">
-            <img class="center-block" 
+            <img class="center-block"
             src="/images/confreaks_logo.png" alt="Confreaks"></a>
           </div>
           <div class="col-md-3">
             <a href="https://www.erlang-solutions.com/" target="_blank">
-            <img class="center-block" 
+            <img class="center-block"
               src="/images/ESL_logo.png" alt="Erlang Solutions"></a>
           </div>
           <div class="col-md-3">&nbsp;
@@ -744,7 +743,7 @@ By the end of my talk I hope other people will feel the same way as I do about E
             <li>Be accountable.</li>
            </ul>
 
-          If ever in doubt about a course of conduct, ask yourself: 
+          If ever in doubt about a course of conduct, ask yourself:
           <ul>
             <li>Is it ethical?</li>
             <li>Is it legal?</li>
@@ -776,7 +775,7 @@ By the end of my talk I hope other people will feel the same way as I do about E
 
           <p>Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
 
-           
+
         </div>
       </div>
 
@@ -801,22 +800,30 @@ By the end of my talk I hope other people will feel the same way as I do about E
 
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-    <script src="/assets/docs.min.js"></script>
-    <script>
-      $('.row .btn').on('click', function(e) {
-          e.preventDefault();
-          var $this = $(this);
-          var $collapse = $this.closest('.collapse-group').find('.collapse');
-          $collapse.collapse('toggle');
-          console.log($collapse.visible);
-      });
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <script src="scripts/libraries/refill.header.js"></script>
+  <script src="scripts/elixirconf.js"></script>
 
+  <script>
+    $('.row .btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $collapse = $this.closest('.collapse-group').find('.collapse');
+        $collapse.collapse('toggle');
+        console.log($collapse.visible);
+    });
   </script>
-  </body>
-</html>
 
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+ -->
+</body>
+</html>
