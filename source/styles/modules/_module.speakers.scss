@@ -1,240 +1,145 @@
-// .speakers {
-//   // LOCAL VARIABLES
-$speaker-accent-color: $ufo-green;
-$speaker-border-color: darken(transparentize(#5dac5d, .8), 30);
-$speaker-border: 1px solid $speaker-border-color;
-
-//   @include clearfix;
-
-//   @include media($large-screen) {
-//     @include row(block);
-//   }
-
-//   .keynote {
-//     @include media($large-screen) {
-//       @include span-columns(6);
-//     }
-
-//     .speaker-info {
-//       // @include clearfix;
-
-//       // @include media($large-screen) {
-//       //   margin-bottom : em(18);
-//       // }
-
-//       figure {
-//         display : block;
-//         margin : 0;
-//         padding : 0;
-//         position : relative;
-//         text-align : center;
-
-//         @include media($large-screen) {
-//           @include span-columns(3 of 6);
-//         }
-
-//         img {
-//           border-radius : 50%;
-//           max-width : 50%;
-
-//           @include media($large-screen) {
-//             border-radius : 0;
-//             max-width : 100% !important;
-//           }
-//         }
-
-//         figcaption {
-//           bottom : em(6);
-//           left : 50%;
-//           margin-left : em(-30);
-//           position : absolute;
-
-//           a {
-//             background : transparentize($ghostwhite, 0.18);
-//             color : #333;
-//             line-height : 18px;
-//             padding : em(6);
-//             @include transition(background 0.3s);
-
-//             &:hover {
-//               background : $ghostwhite;
-//               box-shadow : 0 1px 1px rgba(0,0,0,0.09);
-//             }
-//           }
-//         }
-//       }
-
-//       .speaker-meta {
-//         padding: em(9) em(9) 0;
-
-//         @include media($large-screen) {
-//           @include span-columns(3 of 6);
-//           text-align : right;
-//         }
-
-//         h1 {
-//           font-size : em(27);
-//           margin-bottom : 0;
-
-//           @include media($large-screen) {
-//             font-size : em(36);
-//           }
-//         }
-
-//         h4 {
-//           background: $speaker-accent-color;
-//           color: white;
-//           display: inline-block;
-//           font-size: .75em;
-//           font-weight: 800;
-//           margin-bottom : em(9);
-//           padding: 3px 8px;
-//           text-transform: uppercase;
-
-//           @include media($large-screen) {
-//             margin-bottom : em(18);
-//           }
-//         }
-//       }
-//     }
-
-//     .speaker-bio {
-//       @include media($large-screen) {
-//         @include span-columns(3 of 6);
-//       }
-//       p {
-//         color: gray;
-//         margin-top : 0;
-//         margin-bottom: 3em;
-//         padding : 0 em(9);
-
-//         @include media($large-screen) {
-//           padding : 0;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 .speakers {
+  // LOCAL VARIABLES
+  $speaker-border-color: $base-border-color;
+  $speaker-border: 1px solid $speaker-border-color;
+  $speaker-background: lighten($speaker-border-color, 10);
+
   @include clearfix;
+  list-style : none;
   padding : $base-line-height;
 
   @include media($large-screen) {
     padding : 0;
   }
-}
 
-.speaker {
-  $speaker-border-color: $base-border-color;
-  $speaker-border: 1px solid $speaker-border-color;
-  $speaker-background: lighten($speaker-border-color, 10);
-  $speaker-header-background: $speaker-background;
-  $speaker-hover-background: lighten($speaker-background, 5);
-  $speaker-image-background: #DBD199;
-  $speaker-image-hover-background: lighten($speaker-image-background, 5);
-  $speaker-stats-color: lighten($base-accent-color, 10);
-
-  @include transition (all 0.2s ease-in-out);
-  background-color: $speaker-background;
-  border-radius: $base-border-radius;
-  border: $speaker-border;
-  margin-bottom: $base-line-height;
-  cursor: pointer;
-  box-shadow: 0 2px 4px darken($base-background-color, 10);
-  position: relative;
-
-  @include media($medium-screen-up) {
-    @include span-columns(4);
-    @include omega(3n);
-  }
-
-  .speaker-image {
-    overflow: hidden;
-    max-height: 360px;
-
-    img {
-      width: 100%;
-      @include transition (all 0.2s ease-in-out);
-      background: $speaker-image-background;
-      border-top-left-radius: $base-border-radius;
-      border-top-right-radius: $base-border-radius;
-    }
-  }
-
-  .ribbon-wrapper {
-    $ribbon-size: 85px;
-    $ribbon-background: $base-accent-color;
-    @include size($ribbon-size);
-    overflow: hidden;
-    position: absolute;
-    top: -1px;
-    right: -1px;
-
-    .ribbon {
-      font-size: 0.63em;
-      font-weight: 800;
-      text-align: center;
-      @include transform(rotate(45deg));
-      position: relative;
-      padding: 2px 7px;
-      left: -5px;
-      top: 15px;
-      width: 120px;
-      background-color: $ribbon-background;
-      color: white;
-      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    }
-  }
-
-  .speaker-header {
+  .speaker {
     @include transition (all 0.2s ease-in-out);
-    background-color: $speaker-header-background;
-    border-bottom: $speaker-border;
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    padding: $base-line-height/3 $gutter/2;
-  }
+    // background-color: $speaker-background;
+    border-radius: $base-border-radius;
+    // border: $speaker-border;
+    box-shadow: 0 2px 4px darken($base-background-color, 10);
+    // cursor: pointer;
+    margin-bottom: $base-line-height;
+    padding : 0;
+    position: relative;
+    text-align : left;
 
-  .speaker-copy {
-    padding: $base-line-height/2 $gutter/2;
-    font-size: .9em;
-    line-height: 1.5em;
-  }
-
-  &:hover {
-    background-color: $speaker-hover-background;
-
-    .speaker-image img {
-      background: $speaker-image-hover-background;
-    }
-
-    .speaker-header {
-      background-color: $speaker-hover-background;
-    }
-  }
-
-  &:active {
-    background-color: $speaker-background;
-
-    .speaker-header {
-      background-color: $speaker-background;
-    }
-  }
-
-  &.keynote {
     @include media($medium-screen-up) {
-      @include span-columns(6);
-      @include omega(2n);
+      @include span-columns(4);
+      @include omega(3n);
     }
 
-    .speaker-copy {
-      min-height : 153px;
+    &.keynote {
+      @include media($medium-screen-up) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
 
-      @include media($large-screen) {
-        min-height : 108px;
+    .ribbon-wrapper {
+      $ribbon-background: $base-accent-color;
+      @include size(85px);
+      overflow: hidden;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      z-index : 1;
+
+      .ribbon {
+        font-size: 0.63em;
+        font-weight: 800;
+        text-align: center;
+        @include transform(rotate(45deg));
+        position: relative;
+        padding: 2px 7px;
+        left: -5px;
+        top: 15px;
+        width: 120px;
+        background-color: $ribbon-background;
+        color: white;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      }
+    }
+
+    figure {
+      max-height: 360px;
+      margin : 0;
+      overflow : hidden;
+      position : relative;
+
+      img {
+        @include transition(transform 0.3s);
+        border-top-right-radius: $base-border-radius;
+        border-top-left-radius: $base-border-radius;
+        display : block;
+        position : relative;
+        max-width : 100%;
+        width: 100%;
+      }
+
+      figcaption {
+        @include transform(translate3d(0,100%,0));
+        @include transition(transform 0.3s, opacity 0.1s 0.3s);
+        background : $madison;
+        bottom : 0;
+        color : $ghostwhite;
+        height : em(72);
+        left : 0;
+        opacity : 0;
+        padding : em(18);
+        position : absolute;
+        top : 0;
+        top : auto;
+        width : 100%;
+
+        h3 {
+          font-size: $base-font-size;
+          margin-bottom : em(3);
+          padding : 0;
+
+          span {
+            font-weight : 300;
+          }
+        }
+
+        h4 {
+          font-size: $base-font-size / 1.26;
+        }
+
+        button {
+          @include button(simple, $base-accent-color);
+          bottom : em(18);
+          display : inline-block;
+          font-size: $base-font-size / 1.08;
+          outline: none;
+          padding : em(9);
+          position : absolute;
+          right : em(18);
+          text-align : center;
+
+          @include media($large-screen) {
+            font-size: $base-font-size;
+          }
+
+          &:focus,
+          &:active {
+            outline : none;
+          }
+        }
+
       }
     }
   }
+}
+
+.no-touch .speakers figure:hover img,
+.speakers figure.cs-hover img {
+  @include transform(translate3d(0,-50px,0));
+}
+
+.no-touch .speakers figure:hover figcaption,
+.speakers figure.cs-hover figcaption {
+  opacity : 1;
+  @include transform(translate3d(0,0,0));
+  @include transition(transform 0.3s, opacity 0.1s);
 }

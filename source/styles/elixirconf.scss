@@ -31,7 +31,7 @@
 @import 'modules/refill.hero';
 @import 'modules/module.infobar';
 @import 'modules/module.speakers';
-@import 'modules/refill.type-system-geometric';
+@import 'modules/module.modal';
 @import 'modules/helpers';
 
 
@@ -40,4 +40,5 @@
     STYLES
   --------------------------*/
 
+@import 'modules/icons';
 @import 'modules/styles';

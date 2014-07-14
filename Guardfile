@@ -7,6 +7,7 @@
 # guard :copy, :from => 'source/scripts/', :to => 'public/scripts/'
 guard :copy, :from => 'source/scripts/vendor', :to => 'public/scripts/vendor'
 guard :copy, :from => 'source/scripts/libraries', :to => 'public/scripts/libraries'
+guard :copy, :from => 'source/fonts', :to => 'public/fonts'
 
 # JSHINT
 guard :jshintrb do
