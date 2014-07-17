@@ -7,6 +7,8 @@
 section {
   .heading {
     background : $base-background-color;
+    font-family : $serif;
+    font-weight : 300;
     margin-top : em(18);
     // margin-bottom : em(18);
     padding : em(9) 0;
@@ -43,7 +45,27 @@ section {
   }
 }
 
-.infobar,
-.speakers {
+section.schedule,
+section.about,
+footer.site-footer {
+  border-top : 1px solid desaturate(darken($base-background-color, 9%), 18%);
+  -webkit-box-shadow : -1px 0 1px 1px desaturate(lighten($base-background-color, 9%), 18%);
+          box-shadow : -1px 0 1px 1px desaturate(lighten($base-background-color, 9%), 18%);
+}
+
+section.infobar,
+section.speakers {
   margin-bottom : em(54);
+}
+
+footer.site-footer {
+  background : desaturate($black-currant, 27%);
+  color : desaturate(lighten($black-currant, 36%), 54%);
+  padding : em(54) 0;
+  text-align : center;
+
+  p {
+    margin : 0;
+    padding : 0;
+  }
 }

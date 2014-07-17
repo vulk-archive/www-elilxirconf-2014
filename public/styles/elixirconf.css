@@ -231,6 +231,17 @@ ul, ol {
   padding: 0;
   list-style-type: none;
 }
+#about .about-item ul.default {
+  list-style-type: disc;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+#about .about-item ol.default {
+  list-style-type: decimal;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+
 dl {
   margin-bottom: 0.75em;
 }
@@ -746,17 +757,17 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   margin-left: 0.16875em;
 }
 
-.speakers {
+.speakers > ul {
   list-style: none;
   padding: 1.5em;
 }
-.speakers:after {
+.speakers > ul:after {
   content: "";
   display: table;
   clear: both;
 }
 @media screen and (min-width: 60em) {
-  .speakers {
+  .speakers > ul {
     padding: 0;
   }
 }
@@ -951,6 +962,173 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   transition: transform 0.3s, opacity 0.1s;
 }
 
+.this-is-not-a-table {
+  background: ghostwhite;
+  border: 3px solid #7f8c8d;
+  border-width: 0px 3px 3px;
+  margin-right: 0.5625em;
+  margin-bottom: 2.25em;
+  margin-left: 0.5625em;
+}
+.this-is-not-a-table .not-a-table-header {
+  background: #7f8c8d;
+  color: ghostwhite;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03125em;
+  padding: 1.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.this-is-not-a-table .row {
+  border-bottom: 1px solid rgba(127, 140, 141, 0.19);
+  margin: 1.125em 1.6875em 2.25em;
+  padding-bottom: 2.25em;
+}
+.this-is-not-a-table .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 40em) {
+  .this-is-not-a-table .row {
+    margin: 2.25em 4.5em;
+  }
+}
+@media screen and (min-width: 40em) {
+  .this-is-not-a-table .row:first-child {
+    margin: 3.375em 4.5em 2.25em;
+  }
+}
+.this-is-not-a-table .row:last-child {
+  border-bottom-width: 0;
+  margin-bottom: 0;
+}
+.this-is-not-a-table .row .timespan {
+  color: #7f8c8d;
+  display: block;
+  font-size: 0.84375em;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-bottom: 0.84375em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 40em) {
+  .this-is-not-a-table .row .timespan {
+    display: inline-block;
+    float: left;
+    width: 24%;
+  }
+}
+@media screen and (min-width: 40em) {
+  .this-is-not-a-table .row .event-info {
+    float: left;
+    width: 76%;
+  }
+}
+.this-is-not-a-table .row .event-info .event-title {
+  color: #5e6969;
+  font-family: "Gentium Book Basic", Georgia, Cambria, "Times New Roman", Times, serif;
+  margin-bottom: 0.28125em;
+}
+.this-is-not-a-table .row .event-info .event-speaker {
+  font-size: 0.84375em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#sponsors {
+  background: #fff;
+  border-top: 1px solid #e9e9e9;
+  -webkit-box-shadow: -1px 0 1px 1px #fff;
+  box-shadow: -1px 0 1px 1px #fff;
+}
+#sponsors .heading {
+  background: #fff;
+}
+@media screen and (min-width: 60em) {
+  #sponsors .heading span {
+    background: #fff;
+  }
+}
+#sponsors ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#sponsors ul li {
+  margin-top: 2.25em;
+  margin-bottom: 2.25em;
+  text-align: center;
+}
+@media screen and (min-width: 40em) {
+  #sponsors ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  #sponsors ul li:last-child {
+    margin-right: 0;
+  }
+  #sponsors ul li:nth-child(3n) {
+    margin-right: 0;
+  }
+  #sponsors ul li:nth-child(3n+1) {
+    clear: left;
+  }
+}
+#sponsors ul li img {
+  max-height: 108px;
+  max-width: 180px;
+}
+
+#about .about-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 3.375em;
+  margin-bottom: 3.375em;
+  padding-bottom: 3.375em;
+}
+#about .about-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#about .about-item:last-of-type {
+  border-bottom-width: 0;
+  margin-bottom: 0;
+}
+#about .about-item h4 {
+  font-family: "Gentium Book Basic", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.3125em;
+  margin-bottom: 1.125em;
+}
+#about .about-item h5 {
+  font-size: 1em;
+  margin-bottom: 1.125em;
+}
+#about .about-item p {
+  margin-bottom: 1.125em;
+}
+#about .about-item ul.default {
+  margin-bottom: 1.125em;
+}
+#about .about-item ol.default {
+  margin-bottom: 1.125em;
+}
+@media screen and (min-width: 40em) {
+  #about .about-item aside {
+    float: left;
+    margin-right: 9%;
+    width: 27%;
+  }
+}
+@media screen and (min-width: 40em) {
+  #about .about-item.code-of-conduct > div, #about .about-item.legal-details > div, #about .about-item.contact-information > div {
+    margin-left: 36%;
+  }
+}
+
 .this-modal {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1038,6 +1216,19 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   position: absolute;
   right: 0.5625em;
   top: 0;
+}
+@media screen and (min-width: 60em) {
+  .modal-content h3 button {
+    line-height: 2em;
+  }
+}
+.modal-content h3 button i {
+  font-size: 18px;
+}
+@media screen and (min-width: 60em) {
+  .modal-content h3 button i {
+    line-height: 2em;
+  }
 }
 .modal-content .talk-info,
 .modal-content .speaker-info {
@@ -1459,6 +1650,8 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
 
 section .heading {
   background: #ecf0f1;
+  font-family: "Gentium Book Basic", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
   margin-top: 1.125em;
   padding: 0.5625em 0;
   position: relative;
@@ -1495,7 +1688,26 @@ section .heading span {
   }
 }
 
-.infobar,
-.speakers {
+section.schedule,
+section.about,
+footer.site-footer {
+  border-top: 1px solid #d8d8d8;
+  -webkit-box-shadow: -1px 0 1px 1px white;
+  box-shadow: -1px 0 1px 1px white;
+}
+
+section.infobar,
+section.speakers {
   margin-bottom: 3.375em;
+}
+
+footer.site-footer {
+  background: #221837;
+  color: #7d7393;
+  padding: 3.375em 0;
+  text-align: center;
+}
+footer.site-footer p {
+  margin: 0;
+  padding: 0;
 }

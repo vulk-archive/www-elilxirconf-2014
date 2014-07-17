@@ -80,6 +80,17 @@
       position : absolute;
       right : em(9);
       top : 0;
+
+      @include media($large-screen) {
+        line-height : $base-font-size * 2;
+      }
+
+      i {
+        font-size : 18px;
+        @include media($large-screen) {
+          line-height : $base-font-size * 2;
+        }
+      }
     }
   }
 

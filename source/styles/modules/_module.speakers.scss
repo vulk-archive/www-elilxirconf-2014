@@ -4,12 +4,14 @@
   $speaker-border: 1px solid $speaker-border-color;
   $speaker-background: lighten($speaker-border-color, 10);
 
-  @include clearfix;
-  list-style : none;
-  padding : $base-line-height;
+  & > ul {
+    @include clearfix;
+    list-style : none;
+    padding : $base-line-height;
 
-  @include media($large-screen) {
-    padding : 0;
+    @include media($large-screen) {
+      padding : 0;
+    }
   }
 
   .speaker {
