@@ -771,6 +771,9 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
     padding: 0;
   }
 }
+.speakers > ul:first-of-type {
+  padding-bottom: 0;
+}
 .speakers .speaker {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -816,6 +819,10 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
     clear: left;
   }
 }
+.speakers .speaker.keynote:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .speakers .speaker .ribbon-wrapper {
   height: 85px;
   width: 85px;
@@ -844,10 +851,14 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 .speakers .speaker figure {
-  max-height: 360px;
   margin: 0;
   overflow: hidden;
   position: relative;
+}
+@media screen and (min-width: 40em) {
+  .speakers .speaker figure {
+    max-height: 360px;
+  }
 }
 .speakers .speaker figure img {
   -webkit-transition: -webkit-transform 0.3s;
@@ -861,25 +872,28 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   width: 100%;
 }
 .speakers .speaker figure figcaption {
-  -webkit-transform: translate3d(0, 100%, 0);
-  -moz-transform: translate3d(0, 100%, 0);
-  -ms-transform: translate3d(0, 100%, 0);
-  -o-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.1s 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.1s 0.3s;
-  transition: transform 0.3s, opacity 0.1s 0.3s;
   background: #2c3e50;
-  bottom: 0;
   color: ghostwhite;
-  height: 4.5em;
-  left: 0;
-  opacity: 0;
   padding: 1.125em;
-  position: absolute;
-  top: 0;
-  top: auto;
   width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .speakers .speaker figure figcaption {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.1s 0.3s;
+    transition: transform 0.3s, opacity 0.1s 0.3s;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    top: auto;
+  }
 }
 .speakers .speaker figure figcaption h3 {
   font-size: 1em;
@@ -907,14 +921,13 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   text-decoration: none;
   text-shadow: 0 1px 0 #3eda7d;
   background-clip: padding-box;
-  bottom: 1.125em;
-  display: inline-block;
+  display: none;
   font-size: 0.92593em;
   outline: none;
+  margin-top: 0.5625em;
   padding: 0.5625em;
-  position: absolute;
-  right: 1.125em;
   text-align: center;
+  width: 100%;
 }
 .speakers .speaker figure figcaption button:hover:not(:disabled) {
   box-shadow: inset 0 1px 0 0 #55c784;
@@ -933,35 +946,42 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
 }
 @media screen and (min-width: 60em) {
   .speakers .speaker figure figcaption button {
+    bottom: 1.125em;
     font-size: 1em;
+    display: inline-block;
+    margin: inherit;
+    position: absolute;
+    right: 1.125em;
+    width: auto;
   }
 }
 .speakers .speaker figure figcaption button:focus, .speakers .speaker figure figcaption button:active {
   outline: none;
 }
 
-.no-touch .speakers figure:hover img,
-.speakers figure.cs-hover img {
-  -webkit-transform: translate3d(0, -50px, 0);
-  -moz-transform: translate3d(0, -50px, 0);
-  -ms-transform: translate3d(0, -50px, 0);
-  -o-transform: translate3d(0, -50px, 0);
-  transform: translate3d(0, -50px, 0);
-}
+@media screen and (min-width: 40em) {
+  .no-touch .speakers figure:hover img,
+  .speakers figure.cs-hover img {
+    -webkit-transform: translate3d(0, -50px, 0);
+    -moz-transform: translate3d(0, -50px, 0);
+    -ms-transform: translate3d(0, -50px, 0);
+    -o-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+  }
 
-.no-touch .speakers figure:hover figcaption,
-.speakers figure.cs-hover figcaption {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.1s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.1s;
-  transition: transform 0.3s, opacity 0.1s;
+  .no-touch .speakers figure:hover figcaption,
+  .speakers figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.1s;
+    transition: transform 0.3s, opacity 0.1s;
+  }
 }
-
 .this-is-not-a-table {
   background: ghostwhite;
   border: 3px solid #7f8c8d;
@@ -1129,6 +1149,10 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   }
 }
 
+body.modal-active {
+  overflow: hidden !important;
+}
+
 .this-modal {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1143,7 +1167,7 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   top: 50%;
   visibility: hidden;
   max-width: 630px;
-  min-width: 320px;
+  min-width: 300px;
   width: 50%;
   z-index: 2000;
 }

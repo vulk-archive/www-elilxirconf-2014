@@ -12,6 +12,7 @@ var ModalEffects = (function() {
 
   function init() {
 
+    var body = document.querySelector( 'body' );
     var overlay = document.querySelector( '.modal-overlay' );
 
     [].slice.call( document.querySelectorAll( '.modal-trigger' ) ).forEach( function( el, i ) {
@@ -21,6 +22,7 @@ var ModalEffects = (function() {
 
       function removeModal( hasPerspective ) {
         classie.remove( modal, 'modal-show' );
+        classie.remove( body, 'modal-active' );
 
         if( hasPerspective ) {
           classie.remove( document.documentElement, 'modal-perspective' );
@@ -33,6 +35,7 @@ var ModalEffects = (function() {
 
       el.addEventListener( 'click', function( ev ) {
         classie.add( modal, 'modal-show' );
+        classie.add( body, 'modal-active' );
         overlay.removeEventListener( 'click', removeModalHandler );
         overlay.addEventListener( 'click', removeModalHandler );
 

@@ -12,6 +12,10 @@
     @include media($large-screen) {
       padding : 0;
     }
+
+    &:first-of-type {
+      padding-bottom : 0;
+    }
   }
 
   .speaker {
@@ -35,6 +39,11 @@
       @include media($medium-screen-up) {
         @include span-columns(6);
         @include omega(2n);
+      }
+
+      &:last-child {
+        margin-bottom : 0;
+        padding-bottom : 0;
       }
     }
 
@@ -64,10 +73,13 @@
     }
 
     figure {
-      max-height: 360px;
       margin : 0;
       overflow : hidden;
       position : relative;
+
+      @include media($medium-screen-up) {
+        max-height: 360px;
+      }
 
       img {
         @include transition(transform 0.3s);
@@ -80,19 +92,21 @@
       }
 
       figcaption {
-        @include transform(translate3d(0,100%,0));
-        @include transition(transform 0.3s, opacity 0.1s 0.3s);
         background : $madison;
-        bottom : 0;
         color : $ghostwhite;
-        height : em(72);
-        left : 0;
-        opacity : 0;
         padding : em(18);
-        position : absolute;
-        top : 0;
-        top : auto;
         width : 100%;
+
+        @include media($medium-screen-up) {
+          @include transform(translate3d(0,100%,0));
+          @include transition(transform 0.3s, opacity 0.1s 0.3s);
+          bottom : 0;
+          left : 0;
+          opacity : 0;
+          position : absolute;
+          top : 0;
+          top : auto;
+        }
 
         h3 {
           font-size: $base-font-size;
@@ -110,17 +124,22 @@
 
         button {
           @include button(simple, $base-accent-color);
-          bottom : em(18);
-          display : inline-block;
+          display : none;
           font-size: $base-font-size / 1.08;
           outline: none;
+          margin-top : em(9);
           padding : em(9);
-          position : absolute;
-          right : em(18);
           text-align : center;
+          width : 100%;
 
           @include media($large-screen) {
+            bottom : em(18);
             font-size: $base-font-size;
+            display : inline-block;
+            margin : inherit;
+            position : absolute;
+            right : em(18);
+            width : auto;
           }
 
           &:focus,
@@ -134,14 +153,16 @@
   }
 }
 
-.no-touch .speakers figure:hover img,
-.speakers figure.cs-hover img {
-  @include transform(translate3d(0,-50px,0));
-}
+@include media($medium-screen-up) {
+  .no-touch .speakers figure:hover img,
+  .speakers figure.cs-hover img {
+    @include transform(translate3d(0,-50px,0));
+  }
 
-.no-touch .speakers figure:hover figcaption,
-.speakers figure.cs-hover figcaption {
-  opacity : 1;
-  @include transform(translate3d(0,0,0));
-  @include transition(transform 0.3s, opacity 0.1s);
+  .no-touch .speakers figure:hover figcaption,
+  .speakers figure.cs-hover figcaption {
+    opacity : 1;
+    @include transform(translate3d(0,0,0));
+    @include transition(transform 0.3s, opacity 0.1s);
+  }
 }

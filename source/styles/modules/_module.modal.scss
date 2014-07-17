@@ -1,3 +1,7 @@
+body.modal-active {
+  overflow : hidden !important;
+}
+
 .this-modal {
   @include backface-visibility(hidden);
   @include transform(translate3d(-50%,-50%,0));
@@ -7,7 +11,7 @@
   top : 50%;
   visibility : hidden;
   max-width : 630px;
-  min-width : 320px;
+  min-width : 300px;
   width : 50%;
   z-index : 2000;
 }
