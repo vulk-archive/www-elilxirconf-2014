@@ -1,0 +1,147 @@
+.speakers {
+  // LOCAL VARIABLES
+  $speaker-border-color: $base-border-color;
+  $speaker-border: 1px solid $speaker-border-color;
+  $speaker-background: lighten($speaker-border-color, 10);
+
+  & > ul {
+    @include clearfix;
+    list-style : none;
+    padding : $base-line-height;
+
+    @include media($large-screen) {
+      padding : 0;
+    }
+  }
+
+  .speaker {
+    @include transition (all 0.2s ease-in-out);
+    // background-color: $speaker-background;
+    border-radius: $base-border-radius;
+    // border: $speaker-border;
+    box-shadow: 0 2px 4px darken($base-background-color, 10);
+    // cursor: pointer;
+    margin-bottom: $base-line-height;
+    padding : 0;
+    position: relative;
+    text-align : left;
+
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    &.keynote {
+      @include media($medium-screen-up) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
+
+    .ribbon-wrapper {
+      $ribbon-background: $base-accent-color;
+      @include size(85px);
+      overflow: hidden;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      z-index : 1;
+
+      .ribbon {
+        font-size: 0.63em;
+        font-weight: 800;
+        text-align: center;
+        @include transform(rotate(45deg));
+        position: relative;
+        padding: 2px 7px;
+        left: -5px;
+        top: 15px;
+        width: 120px;
+        background-color: $ribbon-background;
+        color: white;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      }
+    }
+
+    figure {
+      max-height: 360px;
+      margin : 0;
+      overflow : hidden;
+      position : relative;
+
+      img {
+        @include transition(transform 0.3s);
+        border-top-right-radius: $base-border-radius;
+        border-top-left-radius: $base-border-radius;
+        display : block;
+        position : relative;
+        max-width : 100%;
+        width: 100%;
+      }
+
+      figcaption {
+        @include transform(translate3d(0,100%,0));
+        @include transition(transform 0.3s, opacity 0.1s 0.3s);
+        background : $madison;
+        bottom : 0;
+        color : $ghostwhite;
+        height : em(72);
+        left : 0;
+        opacity : 0;
+        padding : em(18);
+        position : absolute;
+        top : 0;
+        top : auto;
+        width : 100%;
+
+        h3 {
+          font-size: $base-font-size;
+          margin-bottom : em(3);
+          padding : 0;
+
+          span {
+            font-weight : 300;
+          }
+        }
+
+        h4 {
+          font-size: $base-font-size / 1.26;
+        }
+
+        button {
+          @include button(simple, $base-accent-color);
+          bottom : em(18);
+          display : inline-block;
+          font-size: $base-font-size / 1.08;
+          outline: none;
+          padding : em(9);
+          position : absolute;
+          right : em(18);
+          text-align : center;
+
+          @include media($large-screen) {
+            font-size: $base-font-size;
+          }
+
+          &:focus,
+          &:active {
+            outline : none;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.no-touch .speakers figure:hover img,
+.speakers figure.cs-hover img {
+  @include transform(translate3d(0,-50px,0));
+}
+
+.no-touch .speakers figure:hover figcaption,
+.speakers figure.cs-hover figcaption {
+  opacity : 1;
+  @include transform(translate3d(0,0,0));
+  @include transition(transform 0.3s, opacity 0.1s);
+}

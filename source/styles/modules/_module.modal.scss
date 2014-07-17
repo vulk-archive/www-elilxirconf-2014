@@ -1,0 +1,137 @@
+.this-modal {
+  @include backface-visibility(hidden);
+  @include transform(translate3d(-50%,-50%,0));
+  height : auto;
+  left : 50%;
+  position : fixed;
+  top : 50%;
+  visibility : hidden;
+  max-width : 630px;
+  min-width : 320px;
+  width : 50%;
+  z-index : 2000;
+}
+
+.modal-show {
+  visibility : visible;
+
+  & ~ .modal-overlay {
+    opacity : 1;
+    visibility : visible;
+  }
+}
+
+.modal-overlay {
+  @include transition(all 0.3s);
+  background : transparentize($black-currant, 0.54);
+  height : 100%;
+  left : 0;
+  opacity : 0;
+  position : fixed;
+  top : 0;
+  visibility : hidden;
+  width : 100%;
+  z-index : 1000;
+}
+
+
+.modal-content {
+  // background : desaturate(lighten($black-currant, 27), 45);
+  // border-radius : 3px;
+  color : $ghostwhite;
+  margin : 0 auto;
+  padding : em(9);
+  position : relative;
+
+  @include media($large-screen) {
+    padding : 0;
+  }
+
+  h3 {
+    border-top : 1px solid transparentize(white, 0.72);
+    border-bottom : 1px solid transparentize(white, 0.72);
+    display : block;
+    float : left;
+    font-family : $serif;
+    font-size: $base-font-size;
+    line-height : $base-font-size * 2;
+    font-weight : 300;
+    margin : 0 0 em(18);
+    padding : 0 em(9);
+    position : relative;
+    text-transform : uppercase;
+    width : 100%;
+
+    @include media($large-screen) {
+      font-size: $base-font-size / 0.63;
+      line-height : em(54);
+      margin : 0 0 em(18);
+    }
+
+    button {
+      background : transparent;
+      bottom : 0;
+      color : $indian-red;
+      display : inline-block;
+      font-size: $base-font-size;
+      margin : 0;
+      outline: none;
+      padding : em(3) em(3) em(2);
+      position : absolute;
+      right : em(9);
+      top : 0;
+
+      @include media($large-screen) {
+        line-height : $base-font-size * 2;
+      }
+
+      i {
+        font-size : 18px;
+        @include media($large-screen) {
+          line-height : $base-font-size * 2;
+        }
+      }
+    }
+  }
+
+  .talk-info,
+  .speaker-info {
+    @include clearfix;
+    // border-bottom : 1px solid transparentize(white, 0.72);
+    margin-bottom : em(18);
+    padding : 0 em(9) em(9);
+
+    h5 {
+      margin-bottom : em(9);
+    }
+    p {
+      // margin : 0;
+      // padding : 0;
+    }
+  }
+}
+
+
+
+
+
+
+.modal-effect .modal-content {
+  @include transform(scale(0.8));
+  @include transition(all 0.3s);
+  opacity : 0;
+}
+
+.modal-show.modal-effect ~ .modal-overlay {
+  background : $black-currant;
+}
+
+.modal-effect .modal-content h3,
+.modal-effect .modal-content {
+  background : transparent;
+}
+
+.modal-show.modal-effect .modal-content {
+  @include transform(scale(1));
+  opacity : 1;
+}

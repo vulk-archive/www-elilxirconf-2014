@@ -1,0 +1,65 @@
+/* INFORMATION BAR */
+.infobar {
+  $infobar-background : $ghostwhite;
+  $infobar-border-color : desaturate(lighten($black-currant, 54), 54);
+  $infobar-item-padding : em(9) 0;
+
+  background : transparentize($ghostwhite, 0.9);
+  color : $solitude;
+  margin-top : em(-99);
+  margin-bottom : em(30);
+  padding-top : em(9);
+  padding-bottom : em(9);
+  text-align : center;
+
+  @include media($large-screen) {
+    background : $infobar-background;
+    border : 1px solid $infobar-border-color;
+    border-width : 1px 0;
+    color : desaturate($black-currant, 18);
+    margin-top : 0;
+    margin-bottom : 0;
+  }
+
+  .infobar-item {
+    display : block;
+    font-size: $base-font-size / 1.17;
+    line-height : em(27);
+
+    @include media($large-screen) {
+      display : inline-block;
+      padding : $infobar-item-padding;
+    }
+
+    &:first-of-type {
+      border-color : $infobar-border-color;
+      border-style : solid;
+      border-width : 0;
+      padding-right : em(9);
+
+      @include media($large-screen) {
+        border-width : 0 1px 0 0;
+        padding-right : em(18);
+      }
+    }
+    &:last-of-type {
+      padding-left : em(9);
+
+      @include media($large-screen) {
+        padding-left : em(18);
+      }
+    }
+
+    em,
+    sup {
+      font-family : $serif;
+      font-style : italic;
+    }
+
+    em {
+      margin-right : em(2.7);
+      margin-left : em(2.7);
+    }
+  }
+}
+

@@ -1,823 +1,877 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Jim Freeze">
-    <link rel="shortcut icon" href="/favicon.ico" />
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Questrial|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ElixirConf 2014</title>
+  <meta name="description" content="Premier conference about Elixir (and Erlang)!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ElixirConf 2014</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/elixirconf.css">
+  <script src="scripts/vendor/modernizr.js"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="styles/icons-ie.css">
+  <![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
-  </head>
 
-<!-- NAVBAR
-================================================== -->
-  <body>
-  <!--
-    <div class="navbar-wrapper">
-      <div class="container">
+  <header class="navigation">
+    <div class="menu-wrapper">
+      <a href="/" class="logo">
+        <img src="images/branding/icon-elixirconf-small.png" alt="ElixirConf">
+      </a>
+      <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
+      <div class="nav">
+        <ul id="navigation-menu">
+          <li class="nav-link"><a href="#speakers">Speakers</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#schedule">Schedule</a></li>
+          <li class="nav-link"><a href="#sponsors">Sponsors</a></li>
+          <li class="nav-link"><a href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </header> <!-- header.navigation -->
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">ElixirConf 2014 - Austin</a>
+  <section class="hero">
+    <div class="hero-inner">
+      <a href="" class="hero-logo"><img src="images/branding/logo-elixirconf-medium.png" alt=""></a>
+      <div class="hero-copy">
+        <h1><em>The</em> Texas Conference <em>for</em> Elixir Makers.</h1>
+      </div>
+      <a class="button" href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">Register Today!</a>
+    </div>
+  </section> <!-- section.hero -->
+
+  <section class="infobar date-place">
+    <div class="constrained">
+      <div class="infobar-item date-of"><span>July 25<sup>th</sup> &ndash; 26<sup>th</sup>, 2014</span></div><!--
+   --><div class="infobar-item venue-place"><span class="venue">Norris Conference Center</span> <em>in</em> <span class="place">Austin, Texas</span></div>
+    </div>
+  </section> <!-- section.infobar.date-place -->
+
+  <section class="constrained speakers" id="speakers">
+
+    <h1 class="heading"><span>Speakers</span></h1>
+
+    <ul>
+      <li class="speaker keynote">
+
+        <div class="ribbon-wrapper"><div class="ribbon">KEYNOTE</div></div>
+
+        <figure>
+          <img src="/images/speakers/keynote-josevalim.jpg" alt="José Valim">
+          <figcaption>
+            <h3>Jos&eacute; Valim <span>(<a href="http://twitter.com/josevalim">@josevalim</a>)</span></h3>
+            <h4><a href="http://plataformatec.com.br/">Plataformatec</a></h4>
+            <button class="modal-trigger" data-modal="modal-1">About Jos&eacute;</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-1">
+          <div class="modal-content">
+            <h3>Jos&eacute; Valim <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Jos&eacute; Valim is an author, developer, and the creator of the <a href="http://elixir-lang.org/">Elixir language</a>. When not building Elixir, Jos&eacute; is also a Rails Core Team member and the founder of the development group <a href="http://plataformatec.com.br/">Plataformatec</a>.</p>
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
 
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
+      </li> <!-- .speaker.keynote -->
 
-                <li><a href="https://www.formstack.com/forms/?1710402-y4rOTw9FLr">Contact</a></li>
+
+      <li class="speaker keynote">
+
+        <div class="ribbon-wrapper"><div class="ribbon">KEYNOTE</div></div>
+
+        <figure>
+          <img src="/images/speakers/keynote-davethomas.jpg" alt="Dave Thomas">
+          <figcaption>
+            <h3>Dave Thomas</h3>
+            <h4><a href="http://pragprog.com/">Pragmatic Programmers</a></h4>
+            <button class="modal-trigger" data-modal="modal-2">About Dave</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-2">
+          <div class="modal-content">
+            <h3>Dave Thomas <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Dave Thomas is a programmer, <a href="http://pragprog.com/book/elixir/programming-elixir">author</a>, and <a href="http://pragprog.com/">publisher</a>. He's also the author of the <a href="http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0">Programming Ruby</a> series, first published in 2000, which helped Ruby on its way to popularity. Dave has done the same with his current book, <a href="http://pragprog.com/book/elixir/programming-elixir">Programming Elixir</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker.keynote -->
+    </ul>
+
+    <ul>
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/brucetate.jpg" alt="Bruce Tate">
+          <figcaption>
+            <h3>Bruce Tate</h3>
+            <h4>icanmaketibetter.com</h4>
+            <button class="modal-trigger" data-modal="modal-3">About Bruce</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-3">
+          <div class="modal-content">
+            <h3>Bruce Tate <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Pipe Dreams</h6>
+              <p>The Elixir pipe is one of the most distinctive features of the new language. Pipes allow the expression of ideas as a series of transformations, which is the essence of functional programming. But sometimes pipes fail, when return values are not uniform, or when policies change.<br>
+              This talk shows how the combination of pipes and macros makes a better and more uniform experience for both API producers and consumers. Be prepared to take a detailed look at macros, how they work, and how they can play a big role in this popular programming feature, the pipe.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Bruce Tate is a mountain biker, climber, and father of two from Austin, Texas. As the Chief Technology Officer of <a href="http://icanmaketibetter.com">icanmaketibetter.com</a>, the revolutionary social innovation and market research platform, he is responsible for leading all technology and developing industry leading agile solutions for voice-of-customer feedback in the social age. As an author, he has written more than ten books, the award winning Seven Languages in Seven Weeks. He's the editor of the Seven in Seven series.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/chrismccord.jpg" alt="Chris McCord">
+          <figcaption>
+            <h3>Chris McCord</h3>
+            <h4>Littlelines</h4>
+            <button class="modal-trigger" data-modal="modal-4">About Chris</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-4">
+          <div class="modal-content">
+            <h3>Chris McCord <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Rise of The Phoenix - Building an Elixir Web Framework</h6>
+              <p>Phoenix is an Elixir Web Framework targeting full-featured, fault tolerant applications with realtime functionality. Together, we'll take a guided tour through the framework, exploring its foundation, goals, and lessons learned. Along the way, well see how macros are used to generate the Routing DSL, and how we can take advantage of Elixir's concurrent nature with an expressive websocket layer. Attendees will discover how to apply macros effectively and see examples of how it easy it is to build realtime web applications.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Chris McCord is a programmer with a passion for science and building things and the creator of the Phoenix Web Framework. He spends his days crafting web applications at Littlelines and currently splits his time between the Ruby and Elixir programming languages. His current interests focus on new web technologies, distributed programming, and teaching others the tools of the trade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/devintorres.jpg" alt="Devin Torres">
+          <figcaption>
+            <h3>Devin Torres</h3>
+            <h4>Clutch Analytics</h4>
+            <button class="modal-trigger" data-modal="modal-5">About Devin</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-5">
+          <div class="modal-content">
+            <h3>Devin Torres <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>The Excitement of Elixir</h6>
+              <p>Elixir stopped being a pretty syntax on top of Erlang a long time ago, and has developed into a formidable solution all its own. We will explore how Elixir's willingness to change has enabled developers to leverage powerful tools such as macros, protocols, streams, agents, and much more.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Professional Elixir developer and OTP evangelist. Author of several Erlang and Elixir libraries of varying popularity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/ericmeadowsjonsson.jpg" alt="Eric Meadows-J&ouml;nsson">
+          <figcaption>
+            <h3>Eric Meadows-J&ouml;nsson</h3>
+            <h4>Elixir contributor / student</h4>
+            <button class="modal-trigger" data-modal="modal-6">About Eric</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-6">
+          <div class="modal-content">
+            <h3>Eric Meadows-J&ouml;nsson <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Hex - How It Was Built</h6>
+              <p>Hex is a new package manager for the Erlang VM. It seeks to fix the major pain points with using dependencies in the Erlang ecosystem by organizing dependencies through semantically versioned packages and ensuring compatible sets of dependencies.<br>
+              Eric will explain how Hex was constructed as well as how it functions, in addition to exploring how Hex does dependency resolution, how it integrates with Mix, and how it communicates with the API server. He will show how you can build an API server and website with with Plug and Ecto, and along the way, he'll explain design choices that were made and problems that had to be solved.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Eric Meadows-J&ouml;nsson is part of the team behind the Elixir programming language and has created many open source projects in Elixir, including Hex: a package manager, and Ecto: a language integrated query for Elixir. He is in his last year working on a Master of Science in Computer Science at Chalmers University in Gothenburg.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/filipevarjao.jpg" alt="Filipe Varj&atilde;o">
+          <figcaption>
+            <h3>Filipe Varj&atilde;o</h3>
+            <h4>Student</h4>
+            <button class="modal-trigger" data-modal="modal-7">About Filipe</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-7">
+          <div class="modal-content">
+            <h3>Filipe Varj&atilde;o <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Elixir - Evaluating Performance Of Language</h6>
+              <p>Filipe will show how to use the IMB (Intel MPI Benchmark) test suite- available from Intel- to maintain a suitable character in the execution of your work, as well as to evaluate the performance of languages Elixir and Erlang.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Filipe is a doctoral student at U.F.PE, Brazil, as well as a linux enthusiast, and open source contributor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/francescocesarini.jpg" alt="Francesco Cesarini">
+          <figcaption>
+            <h3>Francesco Cesarini</h3>
+            <h4></h4>
+            <button class="modal-trigger" data-modal="modal-8">About Francesco</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-8">
+          <div class="modal-content">
+            <h3>Francesco Cesarini <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Thinking In A Highly Concurrent, Mostly-functional Language</h6>
+              <p>Yale Professor Alan Perlis once wrote, &ldquo;A language that doesn’t affect the way you think about programming, is not worth knowing.&rdquo;<br>
+              To really appreciate the power of the actor model, no matter if you are using Go, Rust, AKKA or Erlang, you need to learn to think concurrently. Erlang has for decades been leading the way in concurrent thinking and developers from different communities and backgrounds have a lot to learn from its approach.<br>
+              This talk illustrates by example how embracing the Erlang way of thinking about problems leads to scalable and fault-tolerant designs. It will describe three ways of clustering Erlang nodes within the server side domain, describing how these systems have evolved as the concurrency model and the underlying hardware got more powerful.<br>
+              Through these case studies, we will describe how Erlang, and more specifically, concurrency was done in 1995 when the limit of processes was 30,000, with an evolution as to how concurrency is used and applied today, when the limit of simultaneous processes in the magnitude of millions per virtual machine.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Francesco Cesarini is the founder and technical director of <a href="http://www.erlang-solutions.com">Erlang Solutions Ltd.</a><br>
+              He has used Erlang on a daily basis since 1995, starting as an intern at Ericsson’s computer science laboratory, the birthplace of Erlang. He moved on to Ericsson’s Erlang training and consulting arm working on the first release of the OTP middleware, applying it to turnkey solutions and flagship telecom applications.<br>
+              In 1999, soon after Erlang was released as open source, he founded Erlang Solutions. With offices in five countries, they have become the world leaders in Erlang based support, consulting, training, certification, systems development and conferences. Francesco has worked in major Erlang based projects both within and outside Ericsson, and as Technical Director, has led the development and consulting teams at Erlang Solutions.<br>
+              He is also the co-author of Erlang Programming, a book published by O’Reilly and is currently co-authoring <em>Designing For Scalability With Erlang/OTP</em>.<br>
+              He lectures the graduate students at Oxford University.<br>
+              You can follow his ramblings on twitter <a href="http://twitter.com/francescoc">@francescoc</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/gregvaughn.jpg" alt="Greg Vaughn">
+          <figcaption>
+            <h3>Greg Vaughn</h3>
+            <h4>LivingSocial</h4>
+            <button class="modal-trigger" data-modal="modal-9">About Greg</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-9">
+          <div class="modal-content">
+            <h3>Greg Vaughn <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Elixir Elevated</h6>
+              <p>An elevator simulation has been my side project to explore Elixir and OTP specifically. It's been a nice subject because it is familiar enough and rich enough to go beyond the first StateServer OTP introduction, but without going too far. It's inherently concurrent, has familiar expected interactions between processes, and variations to play with. In this talk we'll go through building this elevator simulation step by step, exploring the OTP APIs, and avoiding the pitfalls.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Greg has worked professionally in 6 languages, currently in Ruby at LivingSocial, but his free time goes to learning Elixir. He taught himself to program at age 13, but took a detour into physics during college. He's a 7th generation Texan currently living in the Dallas area.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/jamessmith.jpg" alt="James Smith">
+          <figcaption>
+            <h3>James Smith</h3>
+            <h4>Gaslight</h4>
+            <button class="modal-trigger" data-modal="modal-10">About James</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-10">
+          <div class="modal-content">
+            <h3>James Smith <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Writing Command Line Applications With Elixir</h6>
+              <p>"I'd love to check out and learn Elixir but I don't really have a problem that is big enough or one that Elixir is well suited for."<br>
+              How many times have you heard this?<br>
+              I have been writing small command line applications using Elixir to solve some of the same kind of problems that I used to use languages like Ruby or Python for in the past and I'm loving it! Elixir and Mix each come with great tools out of the box for writing these kind programs. Additionally, meta-programming, macros, protocols, pipes, and pattern matching can be leveraged to break down problems into small, readable, and easily digested code.<br>
+              Elixir is a very expressive language that is good at solving all manner of problems in an elegant way. That means even problems where concurrency, high availability, and code reloading are not important or are less of a concern.<br>
+              Yes, Elixir is a powerful language but it is also fun and a great way to think about and express problems in a different way.<br>
+              By the end of my talk I hope other people will feel the same way as I do about Elixir and go forth and create programs to solve problems of any size.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>James works at Gaslight and has I've been lucky enough to be a part the wonderful Cincinnati programming community for a number of years.  He spends most of this days working on Ruby on Rails and Rich Client applications.  He has more recently been learning functional programming and working with Elixir to solve both small and large problems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/joshadams.jpg" alt="Josh Adams">
+          <figcaption>
+            <h3>Josh Adams</h3>
+            <h4>Isotope11</h4>
+            <button class="modal-trigger" data-modal="modal-11">About Josh</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-11">
+          <div class="modal-content">
+            <h3>Josh Adams <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Introduction to Elixir for Rubyists</h6>
+              <p>Elixir is a concurrency-oriented programming language built atop the Erlang VM. Its syntax is very Ruby-influenced, and it takes some great features from the Python world as well. In this talk, Josh will provide a quick introduction to the language. He'll also provide a quick overview of the language syntactically, as well as cover some areas where it differs wildly from Ruby.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>I'm the CTO of Isotope11, a mildly successful software development company that focuses on Ruby, JavaScript, and Erlang/Elixir. I'm also responsible for http://www.elixirsips.com, a screencast series wherein I walk through elixir as I learn it, and record 2 shortish (5-12 minutes, occasionally longer) videos per week. I've also been a co-author and a technical reviewer for multiple books on the Arduino microprocessor and Ruby, and have had a lot of fun doing robotics with Ruby as well. I'm currently aiming to bring that robotics fun to Erlang (or Elixir).</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/martinschurrer.jpg" alt="Martin Schurrer">
+          <figcaption>
+            <h3>Martin Schurrer</h3>
+            <h4><a href="http://sauspiel.de">sauspiel.de</a>/<a href="http://boldpokerapp.com">Bold Poker</a></h4>
+            <button class="modal-trigger" data-modal="modal-12">About Martin</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-12">
+          <div class="modal-content">
+            <h3>Martin Schurrer <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Otp In Production: The Nitty-Gritty Details Of Game Servers</h6>
+              <p><a href="http://sauspiel.de">sauspiel.de</a> is Germany's (and the world's) biggest <a href="https://en.wikipedia.org/wiki/Schafkopf">Schafkopf</a> website with 235,000 games every day. <a href="http://boldpokerapp.com">Bold Poker</a> "replaces your deck of cards with iPhones" and is made by the same team. Both could not exist without Erlang/OTP. This talk covers the nitty-gritty details of how their game servers work.<br>
+              Martin will talk about each of the following points from a high level perspective, what we do, and why, and then show the interesting pieces of code that make it work:</p>
+
+              <ul>
+                <li>Building and shipping releases using hot code loading: The tools we built (from helping us test code change upgrades before we deploy them, to performing the actual deploy), where we (re)use custom code_change functions, what they do, why we need them.</li>
+                <li>"Takeovers" where we switch users from game server node A to B in order to do hardware/software (kernel upgrade etc) maintenance without interruptions. What was necessary to support that, how they work.</li>
+                <li>Interfacing between Rails and Erlang</li>
+                <li>Clients disconnecting and reconnecting (e.g. the user presses F5 while playing)</li>
+                <li>Database downtime (hint: we don't just cancel the running games)</li>
+                <li>Integrating Elixir into our Erlang codebase, the issues we ran into (not many :) ) and how we worked around them</li>
+                <li>Itegration tests, testing upgrades before deploys</li>
+                <li>Monitoring the nodes in production (and how we used custom GC settings to reduce memory usage _a lot_)</li>
+                <li>Modularizing the sauspiel.de game server to support three other games too: bummerl.at, fuchstreff.de and skatstube.de</li>
               </ul>
+
+              <p>This talk expects some familiarity with OTP, knowing Erlang the language is not necessary, all code snippets will be translated into equivalent Elixir.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Seasoned Rails developer who got into Erlang and recently Elixir.</p>
             </div>
           </div>
         </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/richardbishop.jpg" alt="Richard Bishop">
+          <figcaption>
+            <h3>Richard Bishop</h3>
+            <h4></h4>
+            <button class="modal-trigger" data-modal="modal-13">About Richard</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-13">
+          <div class="modal-content">
+            <h3>Richard Bishop <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>The First Few Sips</h6>
+              <p>Haskell, Clojure, Scala, Scheme. We all have a laundry list of functional programming languages that we tried to have our functional programming epiphany with, but it just didn't happen. Then along came Elixir. This exciting new programming language ripped the clothing off of functional programming (FP) and showed us that FP isn't some esoteric paradigm reserved only for those with PhDs in Math Wizardry. Elixir showed us that FP is about the transformation of data -- and that it can be fun!<br>
+              As a newcomer to Elixir and coming from an object-oriented background, join me as I share my thoughts and experiences from my journey learning Elixir. Other newcomers should be able to relate. The more experienced Elixir users will be able to see where new users are getting hung up at so that we can target pain points and increase the adoption of Elixir.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Richard is a long time Rubyist that, like many others, has found the same joy in Elixir that Ruby gave him at first. After a short career in Sales and a lightning storm, Richard suddenly started teaching himself how to program and hasn't looked back since. When he isn't trying to perfect his craft at programming (read: bashing his head against the keyboard), he is probably enjoying craft beer and coffee with his lovely wife Tracy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/robertvirding.jpg" alt="Robert Virding">
+          <figcaption>
+            <h3>Robert Virding</h3>
+            <h4>Erlang Solutions</h4>
+            <button class="modal-trigger" data-modal="modal-14">About Robert</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-14">
+          <div class="modal-content">
+            <h3>Robert Virding <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Erlang Rationale</h6>
+              <p>This talk covers the history of Erlang and explains what problems we were trying to solve, the rationale behind how we solved them, and what the results were.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Co-inventor of Erlang, Principal Language Expert @ Erlang Solutions<br>
+              Robert Virding recently joined Erlang Solutions Ltd as Principal Language Expert. While at Ericsson AB, Robert Virding was one of the original members of the Ericsson Computer Science Lab, and co-inventor of the Erlang language. He took part in the original system design and contributed much of the original libraries, as well as to the current compiler. While at the lab he also did a lot of work on the implementation of logic and functional languages and on garbage collection. He has also worked as an entrepreneur and was one of the co-founders of one of the first Erlang startups (Bluetail). Robert Virding also worked a number of years at the Swedish Defence Materiel Administration (FMV) Modelling and Simulations Group. He co-authored the first book (Prentice-Hall) on Erlang, and is regularly invited to teach and present throughout the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+      <li class="speaker">
+        <figure>
+          <img src="/images/speakers/stephenpallen.jpg" alt="Stephen Pallen">
+          <figcaption>
+            <h3>Stephen Pallen</h3>
+            <h4>E-MetroTel</h4>
+            <button class="modal-trigger" data-modal="modal-15">About Stephen</button>
+          </figcaption>
+        </figure>
+
+        <div class="this-modal modal-effect" id="modal-15">
+          <div class="modal-content">
+            <h3>Stephen Pallen <button class="modal-close"><i class="icon-close"></i> CLOSE</button></h3>
+            <div class="talk-info">
+              <h5>Talk Info</h5>
+              <h6>Elixir in an Enterprise Telecommunications Product</h6>
+              <p>We will discuss the experience of productizing and delivering a commercial legacy telephone emulator with Elixir. In addition to looking at designing the solution, the motivation to move to Elixir, porting legacy C code to Elixir, we will discuss introducing a new programming language to a small business. The solution we will be reviewing includes multiple TCP servers, reliable UDP clients and servers, sun rpc, xml, state machines, and a administrator console.</p>
+            </div>
+            <div class="speaker-info">
+              <h5>Bio</h5>
+              <p>Stephen Pallen has been the R&amp;D leader at E-MetroTel for the past 4 years, responsible for introducing several new PBX products. He has over 20 years experience as a software engineering leader, manager, architect, trainer, and developer in the development of unified communications software and web applications with companies like Nortel, AT&amp;T, Avaya, and as an independent consultant. He has been programming with Elixir for less than a year.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-overlay"></div>
+
+      </li> <!-- .speaker -->
+
+    </ul>
+  </section> <!-- section.speakers#speakers -->
+
+  <section class="schedule" id="schedule">
+    <div class="constrained">
+
+      <h1 class="heading"><span>Event Schedule</span></h1>
+
+      <div class="this-is-not-a-table">
+        <h1 class="not-a-table-header">Friday, July 25th, 2014</h1>
+
+        <div class="row event">
+          <span class="timespan">8:00 - 8:45 am</span>
+          <div class="event-info">
+            <h5 class="event-title">Registration &amp; Breakfast</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">8:45 - 9:00 am</span>
+          <div class="event-info">
+            <h5 class="event-title">Welcome &amp; Opening Statements</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">9:00 - 10:00 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Opening Keynote</h5>
+            <p class="event-speaker"><a href="https://twitter.com/pragdave">Dave Thomas</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">10:00 - 10:45 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">The First Few Sips</h5>
+            <p class="event-speaker"><a href="https://twitter.com/rbondev">Richard Bishop</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">10:45 - 11:00 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Short Break</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">11:00 - 11:45 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Introduction to Elixir for Rubyists</h5>
+            <p class="event-speaker"><a href="http://twitter.com/knewter">Josh Adams</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">11:45 - 12:30 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Hex - How it was built</h5>
+            <p class="event-speaker"><a href="http://twitter.com/emjii">Eric Meadows–J&ouml;nsson</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">12:30 - 1:30 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Lunch</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">1:30 - 2:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Writing Command Line Applications with Elixir</h5>
+            <p class="event-speaker"><a href="http://twitter.com/st23am">James Smith</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">2:15 - 3:00 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Elixir Elevated</h5>
+            <p class="event-speaker"><a href="http://twitter.com/gregvaughn">Greg Vaughn</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">3:00 - 3:30 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Short Break</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">3:30 - 4:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Elixir - Evaluating Performance of language</h5>
+            <p class="event-speaker"><a href="http://twitter.com/filipevarjao">Filipe Varj&atilde;o</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">4:15 - 5:00 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Elixir in an Enterprise Telecommunications Product</h5>
+            <p class="event-speaker">Stephen Pallen</p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">5:00 - 11:59 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Self Organized Events</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+      </div> <!-- .this-is-not-a-table -->
+
+      <div class="this-is-not-a-table">
+        <h1 class="not-a-table-header">Saturday, July 26th, 2014</h1>
+
+        <div class="row event">
+          <span class="timespan">8:00 - 9:00 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Registration &amp; Breakfast</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">9:00 - 09:45 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Erlang Rationale</h5>
+            <p class="event-speaker"><a href="http://twitter.com/rvirding">Robert Virding</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">9:45 - 10:30 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Thinking in a Highly Concurrent, Mostly-functional Language</h5>
+            <p class="event-speaker"><a href="http://twitter.com/FrancescoC">Francesco Cesarini</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">10:30 - 10:45 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">Short Break</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">10:45 - 11:30 AM</span>
+          <div class="event-info">
+            <h5 class="event-title">The Excitement of Elixir</h5>
+            <p class="event-speaker"><a href="http://twitter.com/devinus">Devin Torres</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">11:30 - 12:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Pipe Dreams</h5>
+            <p class="event-speaker"><a href="http://twitter.com/redrapids">Bruce Tate</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">12:15 - 01:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Lunch</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">1:15 - 2:00 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Otp In Production: The Nitty-Gritty Details Of Game Servers</h5>
+            <p class="event-speaker"><a href="http://twitter.com/MSch">Martin Schurrer</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">2:00 - 2:45 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Rise of The Phoenix - Building an Elixir Web Framework</h5>
+            <p class="event-speaker"><a href="http://twitter.com/chris_mccord">Chris McCord</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">2:45 - 3:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Short Break</h5>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">3:15 - 4:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Speaker Panel</h5>
+            <p class="event-speaker"><a href="http://twitter.com/josevalim">Jos&eacute; Valim</a>, <a href="http://twitter.com/pragdave">Dave Thomas</a>, <a href="http://twitter.com/rvirding">Robert Virding</a>, <a href="http://twitter.com/FrancescoC">Francesco Cesarini</a></p>
+          </div>
+        </div> <!-- .row.event -->
+
+        <div class="row event">
+          <span class="timespan">4:15 - 5:15 PM</span>
+          <div class="event-info">
+            <h5 class="event-title">Closing Keynote</h5>
+            <p class="event-speaker"><a href="http://twitter.com/josevalim">Jos&eacute; Valim</a></p>
+          </div>
+        </div> <!-- .row.event -->
 
       </div>
+
+    </div> <!-- .constrained -->
+  </section> <!-- section.schedule#schedule -->
+
+  <section class="sponsors" id="sponsors">
+    <div class="constrained">
+
+      <h1 class="heading"><span>Sponsors</span></h1>
+
+      <ul>
+        <li class="sponsor"><a href="http://twitter.com/elixirsips"><img src="images/sponsors/elixirsips.png" alt="Elixir Sips"></a></li>
+        <li class="sponsor"><a href="http://twitter.com/capitalfactory"><img src="images/sponsors/capitalfactory.png" alt="Capital Factory"></a></li>
+        <li class="sponsor"><a href="http://vulk.co/"><img src="images/sponsors/vulk.png" alt="Vulk"></a></li>
+        <li class="sponsor"><a href="http://plataformatec.com.br/"><img src="images/sponsors/plataformatec.png" alt="Plataformatec"></a></li>
+
+        <li class="sponsor"><a href="http://www.lonestarruby.org/"><img src="images/sponsors/lsrf.png" alt="LoneStarRuby"></a></li>
+        <li class="sponsor"><a href="http://elixir-fountain.com/"><img src="images/sponsors/elixirfountain.png" alt="Elixir Fountain"></a></li>
+        <li class="sponsor"><a href="http://www.oreilly.com/"><img src="images/sponsors/oreilly.png" alt="O'Reilly"></a></li>
+        <li class="sponsor"><a href="http://rack.to/elixirconf"><img src="images/sponsors/rackspace.jpg" alt="Rackspace"></a></li>
+
+        <li class="sponsor"><a href="http://www.door64.com/"><img src="images/sponsors/door64.png" alt="door64"></a></li>
+        <li class="sponsor"><a href="http://confreaks.com/"><img src="images/sponsors/confreaks.png" alt="Confreaks"></a></li>
+        <li class="sponsor"><a href="https://www.erlang-solutions.com/"><img src="images/sponsors/erlangsolutions.png" alt="Erlang Solutions"></a></li>
+        <li class="sponsor"><a href="http://www.manning.com/"><img src="images/sponsors/manning.png" alt="Manning"></a></li>
+      </ul>
     </div>
--->
+  </section>
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img class="img-responsive" src="/images/austin3_80.png" width="900" alt="ElixirConf in Austin">
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="images/ElixirConf_Logo_v10.png" width:"100%" alt:"ElixirConf 2014">
-              <h1>July 25-26, 2014  Austin, TX</h1>
-              <p>Registration Now Open!</p>
-              <!-- <p><a class="btn btn-lg btn-primary" href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453" role="button">Reserve your seat</a></p> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/images/lsrc3_20.png" alt="ElixirConf in Austin">
-          <div class="container">
-            <div class="carousel-caption">
-                <img src="images/ElixirConf_Logo_v10.png" width:"100%" alt:"ElixirConf 2014">
-                <h1>Venue: Norris Conference Center</h1>
-              <p>2525 W. Anderson Lane, Suite 365, Austin, Texas 78757</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+  <section class="about" id="about">
+    <div class="constrained">
 
+      <h1 class="heading"><span>Conference Information</span></h1>
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-      <div class="row text-center">
-        <div class="col-lg-4 col-lg-push-4">
-        <!-- <h2>ElixirConf 2014, July&nbsp;25&#8209;26,&nbsp;Austin,&nbsp;TX</h2> -->
-        <a class="btn-lg btn-primary" href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453" >Reserve your seat</a>
-      </div>
-    </div>
-      <hr class="featurettedivider">
-    </div>
-
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/jose.jpg" height="140px" alt="José Valim">
-          <h2>José Valim</h2>
-          <p>José Valim is the creator of the <a href="http://elixir-lang.org/">Elixir language</a>.  José is also a Rails Core Team Member and the founder of <a href="http://plataformatec.com.br/">plataformatec</a>.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/prag_dave_thomas.jpg" height="140px" alt="Dave Thomas">
-          <h2>Dave Thomas</h2>
-          <p>Dave Thomas is a programmer. He's also an accomplished author and <a href="http://pragprog.com/">publisher</a>. Dave Thomas is the author of the <a href="http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0">Programming Ruby</a> series, which he first published in 2000, helping Ruby on its way to popularity. Dave has done the same with his book, <a href="http://pragprog.com/book/elixir/programming-elixir">Programming Elixir</a>.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12 center-block">
-          <span class="app-title center-block text-center">Schedule</span>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-10">
-            <table class="schedule">
-              <tr class="header"><th colspan="3">FRIDAY, JULY 25, 2014</th></tr>
-              <tr>
-                <th>Time</th>
-                <th>Speaker</th>
-                <th>Description</th>
-              </tr>
-              <tr class="lunch"><td class="t">08:00 - 08:45 AM</td><td>Registration/Breakfast</td><td>Assorted Donuts, Sausage Kolachees, Fresh Juices, Fruit, Yogurts &amp; Granola</td></tr>
-              <tr class="welcome"><td class="t">08:45 - 09:00 AM</td><td>Welcome</td><td></td></tr>
-              <tr><td class="t">09:00 - 10:00 AM</td><td>Dave Thomas</td><td>Opening Keynote</td></tr>
-              <tr><td class="t">10:00 - 10:45 AM</td><td>Richard Bishop</td><td class="ttl">The First Few Sips</td></tr>
-              <tr class="break"><td class="t">10:45 - 11:00 AM</td><td>BREAK</td><td></td></tr>
-              <tr><td class="t">11:00 - 11:45 AM</td><td>Josh Adams</td><td class="ttl">Introduction to Elixir for Rubyists</td></tr>
-              <tr><td class="t">11:45 - 12:30 PM</td><td>Eric Meadows–Jönsson</td><td class="ttl">Hex - How it was built</td></tr>
-              <tr class="lunch"><td class="t">12:30 - 01:30 PM</td><td>LUNCH</td><td>BBQ Chicken & Brisket, Ranch Beans, Cole Slaw &amp; Potato Salad, (Vegetarian &amp; Special Request options available, please inform registrar)</td></tr>
-              <tr><td class="t">01:30 - 02:15 PM</td><td>James Smith</td><td class="ttl">Writing Command Line Applications with Elixir</td></tr>
-              <tr><td class="t">02:15 - 03:00 PM</td><td>Greg Vaughn</td><td class="ttl">Elixir Elevated</td></tr>
-              <tr class="break"><td class="t">03:00 - 03:30 PM</td><td>BREAK</td><td>Fresh baked Cookies &amp; Fudge Brownies, Chex Mix and Trail Mixes</td></tr>
-              <tr><td class="t">03:30 - 04:15 PM</td><td>Filipe Varjão</td><td class="ttl">Elixir - Evaluating Performance of language</td></tr>
-              <tr><td class="t">04:15 - 05:00 PM</td><td>Stephen Pallen</td><td class="ttl">Elixir in an Enterprise Telecommunications Product</td></tr>
-              <tr class="lunch"><td class="t">05:00 - 11:59 PM</td><td>Self Organized Events</td><td></td></tr>
-            </table>
-            <br> <br>
-
-            <table class="schedule">
-              <tr class="header"><th colspan="3">SATURDAY, JULY 26, 2014</th></tr>
-              <tr>
-                <th>Time</th>
-                <th>Speaker</th>
-                <th>Description</th>
-              </tr>
-              <tr class="lunch"><td class="t">08:00 - 09:00 AM</td><td>Registration/Breakfast</td><td>Assorted Donuts, Breakfast Tacos, Fresh Baked Scones, Fresh Juices, Fruit, Yogurts &amp; Granola</td></tr>
-              <tr><td class="t">09:00 - 09:45 AM</td><td>Robert Virding</td><td class="ttl">Erlang Rationale</td></tr>
-              <tr><td class="t">09:45 - 10:30 AM</td><td>Francesco Cesarini</td><td class="ttl">Thinking in a Highly Concurrent, Mostly-functional Language</td></tr>
-              <tr class="break"><td>10:30 - 10:45 AM</td><td>BREAK</td><td></td></tr>
-              <tr><td class="t">10:45 - 11:30 AM</td><td>Devin Torres</td><td class="ttl">The Excitement of Elixir</td></tr>
-              <tr><td class="t">11:30 - 12:15 PM</td><td>Bruce Tate</td><td class="ttl">Pipe Dreams</td></tr>
-              <tr class="lunch"><td class="t">12:15 - 01:15 PM</td><td>LUNCH</td><td>Chicken Fried Chicken &amp; Country Gravy, Mashed Potatoes, Green Beans, (Vegetarian & Special Request options available, please inform registrar)</td></tr>
-              <tr><td class="t">01:15 - 02:00 PM</td><td>Martin Schurrer</td><td class="ttl">OTP in production: The nitty-gritty details of game servers</td></tr>
-              <tr><td class="t">02:00 - 02:45 PM</td><td>Chris McCord</td><td class="ttl">Rise of The Phoenix - Building an Elixir Web Framework</td></tr>
-              <tr class="break"><td class="t">02:45 - 03:15 PM</td><td>BREAK</td><td>Chocolate Cake &amp; Ice Cold Milk, Chips and Salsa</td></tr>
-              <tr><td class="t">03:15 - 04:15 PM</td><td>Panel</td><td>José Valim, Dave Thomas, Robert Virding, Francesco Cesarini</td></tr>
-              <tr><td class="t">04:15 - 05:15 PM</td><td>José Valim</td><td>Closing Keynote</td></tr>
-
-            </table>
-            <br> <br>
-            <p>COMMONS: Served All Day: Fresh Brewed Coffee, Decaf & Hot Herbal Teas, and Sodas
-            </p>
-
+      <div class="about-item conference-venue">
+        <aside>
+          <h4>Norris Conference Center</h4>
+          <p><a href="https://goo.gl/maps/6EZZR">2525 W Anderson Ln #365<br>Northcross Mall<br>Austin, TX 78757</a></p>
+          <img src="images/venue-norrisconferencecenter.jpg" alt="Norris Conference Center">
+        </aside>
+        <div>
+          <h4>Hotel to Venue Transportation</h4>
+          <p>The conference hotel (<a href="https://goo.gl/maps/oDL6U">Hyatt Place Austin, Arboretum</a>) provides a shuttle that will run daily to the conference venue (<a href="https://goo.gl/maps/6EZZR">Norris Conference Center</a>).</p>
         </div>
       </div>
 
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12 center-block">
-          <span class="app-title center-block text-center">Speakers</span>
-        <br>
-        </div>
-
-
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-10">
-          <div class="col-md-5">
-            <img class="img-circle center-block" src="/images/speakers/virding.jpg" height="140px" alt="">
-            <h2 class="text-center">Robert&nbsp;Virding</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Erlang Rationale
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>This talk covers the history of Erlang and explains what problems we were trying to solve, the rationale behind how we solved them, and what the results were.</p>
-                <h3>Bio</h3>
-                <p>Co-inventor of Erlang, Principal Language Expert @ Erlang Solutions
-                </p>
-                <p>Robert Virding recently joined Erlang Solutions Ltd as Principal Language Expert. While at Ericsson AB, Robert Virding was one of the original members of the Ericsson Computer Science Lab, and co-inventor of the Erlang language. He took part in the original system design and contributed much of the original libraries, as well as to the current compiler. While at the lab he also did a lot of work on the implementation of logic and functional languages and on garbage collection. He has also worked as an entrepreneur and was one of the co-founders of one of the first Erlang startups (Bluetail). Robert Virding also worked a number of years at the Swedish Defence Materiel Administration (FMV) Modelling and Simulations Group. He co-authored the first book (Prentice-Hall) on Erlang, and is regularly invited to teach and present throughout the world.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-5">
-            <img class="img-circle center-block" src="/images/speakers/20636b8ed86aa2de9e0fea52613dcb46_400x400.jpg" height="140px" alt="">
-            <h2 class="text-center">Francesco&nbsp;Cesarini</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Thinking in a Highly Concurrent, Mostly-functional Language
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>Yale Professor Alan Perlis once wrote, “A language that doesn’t affect the way you think about programming, is not worth knowing.”</p>
-                
-                <p>To really appreciate the power of the actor model, no matter if you are using Go, Rust, AKKA or Erlang, you need to learn to think concurrently. Erlang has for decades been leading the way in concurrent thinking and developers from different communities and backgrounds have a lot to learn from its approach.</p>
-                
-                <p>This talk illustrates by example how embracing the Erlang way of thinking about problems leads to scalable and fault-tolerant designs. It will describe three ways of clustering Erlang nodes within the server side domain, describing how these systems have evolved as the concurrency model and the underlying hardware got more powerful.</p>
-                
-                <p>Through these case studies, we will describe how Erlang, and more specifically, concurrency was done in 1995 when the limit of processes was 30,000, with an evolution as to how concurrency is used and applied today, when the limit of simultaneous processes in the magnitude of millions per virtual machine.</p>
-                <h3>Bio</h3>
-                <p>Francesco Cesarini is the founder and technical director of <a href="http://www.erlang-solutions.com">Erlang Solutions Ltd.</a></p>
-                <p>He has used Erlang on a daily basis since 1995, starting as an intern at 
-                Ericsson’s computer science laboratory, the birthplace of Erlang. 
-                He moved on to Ericsson’s Erlang training and consulting arm working on the 
-                first release of the OTP middleware, applying it to turnkey solutions and 
-                flagship telecom applications.</p>
-                <p>In 1999, soon after Erlang was released as open source, he founded Erlang Solutions. 
-                With offices in five countries, they have become the world leaders in Erlang based 
-                support, consulting, training, certification, systems development and conferences. 
-                Francesco has worked in major Erlang based projects both within and outside Ericsson, 
-                and as Technical Director, has led the development and consulting teams at Erlang Solutions.
-                </p>
-                <p>He is also the co-author of Erlang Programming, a book published by 
-                O’Reilly and is currently co-authoring <em>Designing For Scalability With Erlang/OTP</em>. 
-                He lectures the graduate students at Oxford University. 
-                You can follow his ramblings on twitter <a href="http://twitter.com/francescoc">@francescoc</a>.</p>
-              </div>
-            </div>
-          </div>
-
+      <div class="about-item conference-hotel">
+        <aside>
+          <h4>Hyatt Place Austin, Arboretum</h4>
+          <p><a href="https://goo.gl/maps/oDL6U">3612 Tudor Blvd<br>Austin, TX 78759</a><br><a href="tel:15122318491">+1 512 231-8491</a></p>
+          <img src="images/hotel-hyattplacearboretum.jpg" alt="Hyatt Place Austin, Arboretum">
+        </aside>
+        <div>
+          <h4>Reserving a Room</h4>
+          <p>You can now reserve rooms in either of two ways:</p>
+          <ol class="default">
+            <li>By calling Hyatt Reservations at <a href="tel:18772423654">+1 877 242-3654</a>, and requesting a room reservation using group code <strong>G-ELIX</strong>. The Reservations Agent will be able to quote availability of the group rate on the requested dates, and reserve one of the group rooms for you.</li>
+            <li>By visiting <a href="http://austinarboretum.place.hyatt.com/en/hotel/home.html?corp_id=G-ELIX">Hyatt Place Austin Reservations</a></li>
+          </ol>
+          <p>If no rooms are available, tweet <a href="http://twitter.com/jimfreeze">@jimfreeze</a> to add more rooms to the block. If you have any questions about the reservations process, please let us know.</p>
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_oscon_headshot.jpg" height="140px" alt="Josh Adams">
-            <h2 class="text-center">Josh&nbsp;Adams</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Introduction to Elixir for Rubyists
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>Elixir is a concurrency-oriented programming language built atop the Erlang VM. Its syntax is very Ruby-influenced, and it takes some great features from the Python world as well. In this talk, I'll provide a quick introduction to the language. I'll provide just a quick overview of the language syntactically, as well as cover some areas where it differs wildly from Ruby.
-                </p>
-                <hr>
-                <h3>Bio</h3>
-                <p>
-I'm the CTO of Isotope11, a mildly successful software development company that focuses on Ruby, JavaScript, and Erlang/Elixir. I'm also responsible for http://www.elixirsips.com, a screencast series wherein I walk through elixir as I learn it, and record 2 shortish (5-12 minutes, occasionally longer) videos per week. I've also been a co-author and a technical reviewer for multiple books on the Arduino microprocessor and Ruby, and have had a lot of fun doing robotics with Ruby as well. I'm currently aiming to bring that robotics fun to Erlang (or Elixir).
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_icanmakeitbetter_reduced.jpg" height="140px" alt="Bruce Tate">
-            <h2 class="text-center">Bruce&nbsp;Tate</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Pipe Dreams
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-              <h3>Presentation</h3>
-              <p>The Elixir pipe is one of the most distinctive features of the new language. Pipes allow the expression of ideas as a series of transformations, which is the essence of functional programming. But sometimes pipes fail, when return values are not uniform, or when policies change. 
-            This talk shows how the combination of pipes and macros makes a better and more uniform experience for both API producers and consumers. Be prepared to take a detailed look at macros, how they work, and how they can play a big role in this popular programming feature, the pipe.
-              </p>
-              <h3>Bio</h3>
-              <p>
-              Bruce Tate is a mountain biker, climber, and father of two from Austin, Texas. As the Chief Technology Officer of icanmaketibetter.com, the revolutionary social innovation and market research platform, he is responsible for leading all technology and developing industry leading agile solutions for voice-of-customer feedback in the social age. As an author, he has written more than ten books,  the award winning Seven Languages in Seven Weeks. He's the editor of the Seven in Seven series.
-              </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_08d4b3f.jpg" height="140px" alt="Richard Bishop">
-            <h2 class="text-center">Richard&nbsp;Bishop</h2>
-            <div class="collapse-group">
-              <span class="talk-title">The First Few Sips
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-            <h3>Presentation</h3>
-            <p>Haskell, Clojure, Scala, Scheme. We all have a laundry list of functional programming languages that we tried to have our functional programming epiphany with, but it just didn't happen. Then along came Elixir. This exciting new programming language ripped the clothing off of functional programming (FP) and showed us that FP isn't some esoteric paradigm reserved only for those with PhDs in Math Wizardry. Elixir showed us that FP is about the transformation of data -- and that it can be fun!
-            </p>
-            <p>As a newcomer to Elixir and coming from an object-oriented background, join me as I share my thoughts and experiences from my journey learning Elixir. Other newcomers should be able to relate. The more experienced Elixir users will be able to see where new users are getting hung up at so that we can target pain points and increase the adoption of Elixir.
-            </p>
-            <h3>Bio</h3>
-            <p>
-Richard is a long time Rubyist that, like many others, has found the same joy in Elixir that Ruby gave him at first. After a short career in Sales and a lightning storm, Richard suddenly started teaching himself how to program and hasn't looked back since. When he isn't trying to perfect his craft at programming (read: bashing his head against the keyboard), he is probably enjoying craft beer and coffee with his lovely wife Tracy.
-            </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_avatar-resized.png_.png" height="140px" alt="Chris McCord">
-            <h2 class="text-center">Chris&nbsp;McCord</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Rise of The Phoenix - Building an Elixir Web Framework
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <divp class="collapse detail">
-              <h3>Presentation</h3>
-              <p>Phoenix is an Elixir Web Framework targeting full-featured, fault tolerant applications with realtime functionality. Together, we'll take a guided tour through the framework, exploring its foundation, goals, and lessons learned. Along the way, well see how macros are used to generate the Routing DSL, and how we can take advantage of Elixir's concurrent nature with an expressive websocket layer. Attendees will discover how to apply macros effectively and see examples of how it easy it is to build realtime web applications.
-              </p>
-              <h3>Bio</h3>
-              <p>
-Chris McCord is a programmer with a passion for science and building things and the creator of the Phoenix Web Framework. He spends his days crafting web applications at Littlelines and currently splits his time between the Ruby and Elixir programming languages. His current interests focus on new web technologies, distributed programming, and teaching others the tools of the trade.
-              </p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_eric.jpg" height="140px" alt="Eric Meadows-Jonsson">
-            <h2 class="text-center">Eric&nbsp;Meadows&ndash;Jönsson</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Hex - How it was built
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>Hex is a new package manager for the Erlang VM. It seeks to fix the major pain points with using dependencies in the Erlang ecosystem by organizing dependencies through semantically versioned packages and ensuring compatible sets of dependencies.
-                </p>
-                <p>
-In this talk I will explain how it all works and was built. We explore how Hex does dependency resolution, how it integrates with Mix and communicates with the API server. We show how you can build an API server and website with with Plug and Ecto. Along the way I will explain design choices that were made and problems that we had to solve.
-                </p>
-                <h3>Bio</h3>
-                <p>Eric Meadows-Jönsson is part of the team behind the Elixir programming language and has created many open source projects in Elixir, including Hex, a package manager and Ecto, a language integrated query for Elixir. He is on his last year working on a Master of Science in Computer Science at Chalmers University in Gothenburg.
-                </p>
-              </div> <!-- collapse -->
-            </div>   <!-- collapse-group -->
-          </div>
-
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_jtj_4031_5x7.jpg" height="140px" alt="Stephen Pallen">
-            <h2 class="text-center">Stephen&nbsp;Pallen</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Elixir in an Enterprise Telecommunications Product
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>We will discuss the experience of productizing and delivering a commercial legacy telephone emulator with Elixir. In addition to looking at designing the solution, the motivation to move to Elixir, porting legacy C code to Elixir, we will discuss introducing a new programming language to a small business. The solution we will be reviewing includes multiple TCP servers, reliable UDP clients and servers, sun rpc, xml, state machines, and a administrator console.
-                </p>
-                <h3>Bio</h3>
-                <p>Stephen Pallen has been the R&amp;D leader at E-MetroTel for the past 4 years, responsible for introducing several new PBX products. He has over 20 years experience as a software engineering leader, manager, architect, trainer, and developer in the development of unified communications software and web applications with companies like Nortel, AT&amp;T, Avaya, and as an independent consultant. He has been programming with Elixir for less than a year.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <img class="img-circle center-block"
-              src="/images/speakers/24617564_fb_new_square.jpg" height="140px" alt="Martin Schurrer">
-            <h2 class="text-center">Martin&nbsp;Schurrer</h2>
-            <div class="collapse-group">
-              <span class="talk-title">OTP in production: The nitty-gritty details of game servers
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>sauspiel.de is Germany's (and the world's) biggest Schafkopf (a trick-taking card game https://en.wikipedia.org/wiki/Schafkopf) website with 235.000 games every day. Bold Poker (boldpokerapp.com) "replaces your deck of cards with iPhones" and is made by the same team. 
-Both could not exist without Erlang/OTP.
-                </p>
-
-                <p>
-This talk covers the nitty-gritty details of how their game servers work. 
-I'll talk about each of the following points from a high level perspective, 
-what we do and why and then show the interesting pieces of code that make it work:
-                </p>
-
-                <ul>
-  <li>Building and shipping releases using hot code loading: The tools we built (from helping us test code change upgrades before we deploy them, to performing the actual deploy), where we (re)use custom code_change functions, what they do, why we need them.</li>
-  <li>"Takeovers" where we switch users from game server node A to B in order to do hardware/software (kernel upgrade etc) maintenance without interruptions. What was necessary to support that, how they work.</li>
-  <li>Interfacing between Rails and Erlang</li>
-  <li>Clients disconnecting and reconnecting (e.g. the user presses F5 while playing)</li>
-  <li>Database downtime (hint: we don't just cancel the running games)</li>
-  <li>Integrating Elixir into our Erlang codebase, the issues we ran into (not many :) ) and how we worked around them</li>
-  <li>Itegration tests, testing upgrades before deploys</li>
-  <li>Monitoring the nodes in production (and how we used custom GC settings to reduce memory usage _a lot_)</li>
-  <li>Modularizing the sauspiel.de game server to support three other games too: bummerl.at, fuchstreff.de and skatstube.de</li>
-                </ul>
-
-                <p>
-This talk expects some familiarity with OTP, knowing Erlang the language is not necessary, all code snippets will be translated into equivalent Elixir.
-                </p>
-                <h3>Bio</h3>
-                <p>
-Seasoned Rails developer who got into Erlang and recently Elixir.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_bio2.jpg" height="140px" alt="James Smith">
-            <h2 class="text-center">James&nbsp;Smith</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Writing Command Line Applications with Elixir
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-<p>
-I'd love to check out and learn Elixir but I don't really have a problem that is big enough or one that Elixir is well suited for." 
-</p>
-
-<p>
-How many times have you heard this?
-</p>
-
-<p>
-I have been writing small command line applications using Elixir to solve some of the same kind of problems that I used to use languages like Ruby or Python for in the past and I'm loving it! 
-</p>
-
-<p>
-Elixir and mix comes with great tools out of the box for writing these kind programs. Also Meta-programming, macros, protocols, pipes and pattern matching can be leveraged to break down problems into small readable and easy digest code.
-</p>
-
-<p>
-Elixir is a very expressive language that is good at solving all manner of problems in an elegant way. That means even problems where concurrency, high availability and code reloading are not important or of less of a concern. 
-</p>
-
-<p>
-Yes Elixir is a powerful language but it is also fun and a great way to think about and express problems in a different way.
-</p>
-
-<p>
-By the end of my talk I hope other people will feel the same way as I do about Elixir and go forth and create programs to solve problems of any size.
-</p>
-                <h3>Bio</h3>
-                <p>James works at Gaslight and has I've been lucky enough to be a part the wonderful Cincinnati programming community for a number of years.  He spends most of this days working on Ruby on Rails and Rich Client applications.  He has more recently been learning functional programming and working with Elixir to solve both small and large problems.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- col-md-12 -->
-      </div> <!-- row -->
-
-
-      <hr class="featurette-divider">
-      
-      <div class="row">
-        <div class="col-md-12">
-
-
-          <div class="col-md-3">
-              <img class="img-circle center-block" 
-              src="/images/speakers/24617564_me.jpg" height="140px" alt="Filipe Varjao">
-            <h2 class="text-center">Filipe&nbsp;Varjão</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Elixir - Evaluating Performance of language
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>I will show use a test suite available from Intel, known as IMB - Intel MPI Benchmark to maintain a suitable character in the execution of this work, to evaluate the performance of languages Elixir and Erlang, like others languages off (Scala and extensions of Erlang) add positive point and negatives of language, e friendly syntax when compared to others.
-                </p>
-                <h3>Bio</h3>
-                <p>Doctoral student at U.F.PE, Brazil, linux enthusiasts and with open projects.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-3">
-            <img class="img-circle center-block" 
-              src="/images/speakers/24617564_me-cropped.jpg" height="140px" alt="Greg Vaughn">
-            <h2 class="text-center">Greg&nbsp;Vaughn</h2>
-            <div class="collapse-group">
-              <span class="talk-title">Elixir Elevated
-                <a class="btn" href="#"><span class="caret"></a>
-              </span>
-              <div class="collapse detail">
-                <h3>Presentation</h3>
-                <p>An elevator simulation has been my side project to explore Elixir and OTP specifically. It's been a nice subject because it is familiar enough and rich enough to go beyond the first StateServer OTP introduction, but without going too far. It's inherently concurrent, has familiar expected interactions between processes, and variations to play with. In this talk we'll go through building this elevator simulation step by step, exploring the OTP APIs, and avoiding the pitfalls.
-                </p>
-                <h3>Bio</h3>
-                <p>I've worked professionally in 6 languages, currently in Ruby at LivingSocial, but my free time goes to learning Elixir. The Erlang ecosystem is new and fascinating to me. I wonder why I'd never explored it before. I taught myself to program at age 13, but took a detour into physics during college. I'm a 7th generation Texan currently living in the Dallas area.
-                </p>
-              </div>
-            </div>
-          </div>
-
-      
-       <div class="col-md-3">
-         <img class="img-circle center-block" 
-           src="/images/speakers/24617564_n727615181_3779084_6783_400x400.jpg" height="140px" alt="Devin Torres">
-         <h2 class="text-center">Devin&nbsp;Torres</h2>
-         <div class="collapse-group">
-           <span class="talk-title">The Excitement of Elixir
-             <a class="btn" href="#"><span class="caret"></a>
-           </span>
-           <div class="collapse detail">
-             <h3>Presentation</h3>
-             <p>
-             Elixir stopped being a pretty syntax on top of Erlang a long time ago, and has developed into a formidable solution all its own. We will explore how Elixir's willingness to change has enabled developers to leverage powerful tools such as macros, protocols, streams, agents, and much more.
-             </p>
-
-             </p>
-             <h3>Bio</h3>
-             <p>Professional Elixir developer and OTP evangelist. Author of several Erlang and Elixir libraries of varying popularity.</p>
-             </p>
-           </div>
-         </div>
-       </div>
-     </div> <!-- col-md-12 -->
-   </div> <!-- row -->
-
-
-      <hr class="featurette-divider">
-
-<!-- TEST 2 -->
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <img class="featurette-image img-responsive" src="/images/ElixirConf_Logo_v09.png" width="365px" alt="Registration now open">
-        </div>
-        <div class="col-md-5">
-          <a href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">
-            <h2 class="featurette-heading">Registration</h2></a>
-          <p class="lead">
-          Early bird tickets are avaialble now until June 1.
-          </p>
-        </div>
-
-        <div class="featurette-spacer">&nbsp;</div>
-
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Venue: 
-            <a href="http://norriscenters.com/Austin/">
-              <span class="text-muted">Norris Conference Center</span>
-            </a>
-          </h2>
-          <p class="lead">2525 W. Anderson Lane, Suite 365, Austin, Texas 78757</p>
-          <h2>Transportation from Hotel to Venue</h2>
-          <p class="">The conference hotel (Hyatt Place Austin/Arboretum) provides a shuttle that will run daily to the conference venue (Norris Conference Center).</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/norris.jpg" alt="Norris Conference Center">
-        </div>
-      </div>
-
-
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/hotel.jpg" alt="Conference Hotel">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Conference Hotel <span class="text-muted"></span></h2>
-          <p class="lead">
-          Hyatt Place Austin/Arboretum<br>
-          3612 Tudor Boulevard<br>
-          Austin, Texas, USA, 78759<br>
-          Tel: +1 512 231 8491<br>
-          </p> 
-          <p>
-          You can now reserve rooms in either of two ways:
-          </p>
-
-          <p>
-          1) By calling Hyatt Reservations at 877-242-3654, 
-            and requesting a room reservation using group code <b>G-ELIX</b>. 
-            The Reservations Agent will be able to quote availability of the group rate 
-            on the requested dates, and reserve one of the group rooms for you.
-          </p>
-           
-          <p>
-          2) By visiting <a href="http://austinarboretum.place.hyatt.com/en/hotel/home.html?corp_id=G-ELIX">Hyatt Place Austin Reservations</a>
-          </p>
-           
-          <p>
-          If no rooms are available, tweet @jimfreeze to add more rooms to the block. If you have any questions about the reservations process, please let us know. 
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row">
-        <div class="col-md-12 center-block">
-          <span class="app-title center-block text-center">Sponsors</span>
-        <br /><br />
-        </div>
-        <div class="col-md-12">
-          <div class="col-md-3">
-            <a href="http://twitter.com/elixirsips" target="_blank">
-            <img class="img-circle center-block" 
-              src="/images/elixirSip_logo.png" alt="Elixir Sip"> </a>
-          </div>
-          <div class="col-md-3">
-            <a href="http://twitter.com/capitalfactory" target="_blank">
-            <img class="img center-block" 
-              src="/images/capitalFactory_logo.png" alt="Capital Factory"> </a>
-          </div>
-          <div class="col-md-3">
-            <a href="http://vulk.co" target="_blank">
-            <img class="img center-block" 
-              src="/images/vulk_logo.png" alt="Vulk"></a>
-          </div>
-          <div class="col-md-3">
-            <a href="http://plataformatec.com.br/" target="_blank">
-            <img class="img center-block" 
-              src="/images/ptec-logo-eng.png" alt="Plataformatec"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 center-block">
-        <br /><br />
-        </div>
-        <div class="col-md-12">
-          <div class="col-md-4">
-            <a href="http://www.oreilly.com/" target="_blank">
-            <img class="center-block"
-              src="/images/oreilly_logo.png" alt="O'Reilly"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="http://rack.to/elixirconf" target="_blank">
-            <img class="center-block" 
-              src="/images/Rackspace.jpg" alt="Rackspace"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="http://www.door64.com/" target="_blank">
-            <img class="center-block" 
-            src="/images/door64-300x109-elixirconf.png" width="250px" alt="door64"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 center-block">
-        <br /><br />
-        </div>
-        <div class="col-md-12">
-          <div class="col-md-4">
-            <a href="http://confreaks.com/" target="_blank">
-            <img class="center-block" 
-            src="/images/confreaks_logo.png" alt="Confreaks"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://www.erlang-solutions.com/" target="_blank">
-            <img class="center-block" 
-              src="/images/ESL_logo.png" alt="Erlang Solutions"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="http://www.manning.com/" target="_blank">
-            <img class="center-block" 
-            src="/images/manning_logo.png" alt="Manning"></a>
-          </div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Code of Conduct</h2>
-          <p class="lead"> ElixirConf is a community conference created to promote education, networking and collaboration within the Elixir/Erlang communities.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/yellow-ribbon-banner-hi.png" alt="Norris Conference Center">
-        </div>
-
-        <div class="col-md-7">
-
+      <div class="about-item code-of-conduct">
+        <div>
+          <h4>Code of Conduct</h4>
+          <h5>ElixirConf is a community conference created to promote education, networking and collaboration within the Elixir/Erlang communities.</h5>
           <p>We value the participation of each member of the community and want all attendees to have an enjoyable and fulfilling experience. Attendees are expected to act with decorum, showing respect and acceptance to other attendees throughout the conference, and at all conference events, whether officially sponsored by ElixirConf or not.</p>
-
           <p>All delegates, speakers, exhibitors, and volunteers at ElixirConf are required to conform to the following Code of Conduct. Organizers will implement this code throughout the event.</p>
-
-          <ul>
-            <li>Be honest.</li>
-            <li>Use respectful language and actions.</li>
-            <li>Be inclusive.</li>
-            <li>Respect culture and custom.</li>
-            <li>Consider your actions and act with integrity.</li>
-            <li>Use good judgment and avoid even the appearance of improper behavior. </li>
-            <li>Follow the law.</li>
-            <li>Be accountable.</li>
-           </ul>
-
-          If ever in doubt about a course of conduct, ask yourself: 
-          <ul>
+          <ul class="default">
+            <li>Be honest</li>
+            <li>Use respectful language and actions</li>
+            <li>Be inclusive</li>
+            <li>Respect culture and custom</li>
+            <li>Consider your actions and act with integrity</li>
+            <li>Use good judgment and avoid even the appearance of improper behavior</li>
+            <li>Follow the law</li>
+            <li>Be accountable</li>
+          </ul>
+          <p>If ever in doubt about a course of conduct, ask yourself:</p>
+          <ul class="default">
             <li>Is it ethical?</li>
             <li>Is it legal?</li>
-            <li>Will it reflect well on me and ElixirConf?</li>
+            <li>Will it reflect well on me as well as ElixirConf?</li>
             <li>Would I want to read about it in the newspaper or on the web?</li>
           </ul>
-
           <p>If the answer is “No” to any of these questions, don’t do it.</p>
-
-
-          <p>Thank you for helping make this a welcoming, friendly event for all.</p>
-
-
-          <h3>LEGAL DETAILS</h3>
-          <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
-
-          <p>Speakers, attendees, exhibitors, sponsors and vendors are subject to the code of conduct. Speakers, sponsors and exhibitors should not use profane, vulgar or sexual images, activities, or other material. Booth staff (including volunteers) should not wear revealing clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
-
-          <p>Talks should be appropriate for both a professional audience, and a younger audience. Imagery and language (both written and spoken), are to be free of profane, vulgar or sexual content.</p>
-
-          <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
-
-          <p>If a participant engages in behavior that violates this code of conduct, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
-
-          <h3>CONTACT INFORMATION</h3>
-          <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing  "Staff” t-shirts. You may also contact the venue staff and ask to be put in touch with the conference organizer — Jim Freeze.</p>
-
-          <p>If the matter is especially urgent, please call/contact Jim Freeze at +1 (512) 949-9683.</p>
-
-          <p>Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
-
-           
+          <p>We want to thank you for helping make this a welcoming, friendly event for all.</p>
         </div>
       </div>
 
-      <!-- /END THE FEATURETTES -->
+      <div class="about-item legal-details">
+        <div>
+          <h4>Legal Details</h4>
+          <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+          <p>Speakers, attendees, exhibitors, sponsors and vendors are subject to the code of conduct. Speakers, sponsors and exhibitors should not use profane, vulgar or sexual images, activities, or other material. Booth staff (including volunteers) should not wear revealing clothing/uniforms/costumes, or otherwise create a sexualized environment.</p>
+          <p>Talks should be appropriate for both a professional audience, and a younger audience. Imagery and language (both written and spoken), are to be free of profane, vulgar or sexual content.</p>
+          <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+          <p>If a participant engages in behavior that violates this code of conduct, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+        </div>
+      </div>
 
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-<!--
-        <p>&copy; 2014 ??, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
--->
-      </footer>
-
-    </div><!-- /.container -->
-
+      <div class="about-item contact-information">
+        <div>
+          <h4>Contact Information</h4>
+          <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing "Staff" t-shirts. You may also contact the venue staff and ask to be put in touch with the conference organizer &mdash; Jim Freeze.</p>
+          <p>If the matter is especially urgent, please call/contact Jim Freeze at <a href="tel:15129499683">+1 512 949-9683</a>.</p>
+          <p>Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+        </div>
+      </div>
 
     </div>
+  </section>
 
+  <footer class="site-footer">
+    <div class="constrained">
+      <p>Thanks for checking us out. We look forward to <a href="https://www.eventbrite.com/e/elixirconf-2014-tickets-11044184453">seeing you at the conference</a>!</p>
+    </div>
+  </footer>
 
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-    <script src="/assets/docs.min.js"></script>
-    <script>
-      $('.row .btn').on('click', function(e) {
-          e.preventDefault();
-          var $this = $(this);
-          var $collapse = $this.closest('.collapse-group').find('.collapse');
-          $collapse.collapse('toggle');
-          console.log($collapse.visible);
-      });
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <script src="scripts/libraries/classie.js"></script>
+  <script src="scripts/libraries/refill.header.js"></script>
+  <script src="scripts/libraries/grid-hover-effects.js"></script>
+  <script src="scripts/libraries/modal-effects.js"></script>
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/scripts/libraries/';
   </script>
-  </body>
-</html>
+  <script src="scripts/libraries/css-parser.js"></script>
+  <script src="scripts/libraries/css-filters-polyfill.js"></script>
+  <script src="scripts/elixirconf.js"></script>
 
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+ -->
+</body>
+</html>
