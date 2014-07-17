@@ -1,0 +1,81 @@
+.this-is-not-a-table {
+  background : $ghostwhite;
+  border : 3px solid $oslo-gray;
+  border-width : 0px 3px 3px;
+  margin-right : em(9);
+  margin-bottom : em(36);
+  margin-left : em(9);
+
+  // @include media($medium-screen) {
+  //   margin-right : em(72);
+  //   margin-left : em(72);
+  // }
+
+  .not-a-table-header {
+    background : $oslo-gray;
+    color : $ghostwhite;
+    font-family : "Open Sans", $sans-serif;
+    font-size : 14px;
+    letter-spacing : em(0.5);
+    padding : em(24) 0;
+    text-align : center;
+    text-transform : uppercase;
+  }
+
+  .row {
+    @include clearfix;
+    border-bottom : 1px solid transparentize($oslo-gray, 0.81);
+    margin : em(18) em(27) em(36);
+    padding-bottom : em(36);
+
+    @include media($medium-screen) {
+      margin : em(36) em(72);
+    }
+
+    &:first-child {
+      @include media($medium-screen) {
+        margin : em(54) em(72) em(36);
+      }
+    }
+
+    &:last-child {
+      border-bottom-width : 0;
+      margin-bottom : 0;
+    }
+
+    .timespan {
+      color : $oslo-gray;
+      display : block;
+      font-size : em(13.5);
+      font-weight : 700;
+      line-height : $base-line-height;
+      margin-bottom : em(13.5);
+      text-transform : uppercase;
+
+      @include media($medium-screen) {
+        display : inline-block;
+        float : left;
+        width : 24%;
+      }
+    }
+
+    .event-info {
+      @include media($medium-screen) {
+        float : left;
+        width : 76%;
+      }
+
+      .event-title {
+        color : darken($oslo-gray, 13.5%);
+        font-family : $serif;
+        margin-bottom : em(4.5);
+      }
+
+      .event-speaker {
+        font-size : em(13.5);
+        margin-bottom : 0;
+        padding-bottom : 0;
+      }
+    }
+  }
+}
