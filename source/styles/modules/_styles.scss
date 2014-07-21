@@ -58,6 +58,13 @@ section.speakers {
   margin-bottom : em(54);
 }
 
+.this-is-not-a-table + p {
+  font-size : em(16);
+  font-weight : 700;
+  margin-bottom : em(36);
+  text-align : center;
+}
+
 footer.site-footer {
   background : desaturate($black-currant, 27%);
   color : desaturate(lighten($black-currant, 36%), 54%);
@@ -66,6 +73,6 @@ footer.site-footer {
 
   p {
     margin : 0;
-    padding : 0;
+    padding : 0 em(18);
   }
 }

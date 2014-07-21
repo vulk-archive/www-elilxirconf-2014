@@ -1107,7 +1107,9 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   border-bottom: 1px solid #e0e0e0;
   margin-top: 3.375em;
   margin-bottom: 3.375em;
+  padding-right: 1.125em;
   padding-bottom: 3.375em;
+  padding-left: 1.125em;
 }
 #about .about-item:after {
   content: "";
@@ -1725,6 +1727,13 @@ section.speakers {
   margin-bottom: 3.375em;
 }
 
+.this-is-not-a-table + p {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 2.25em;
+  text-align: center;
+}
+
 footer.site-footer {
   background: #221837;
   color: #7d7393;
@@ -1733,5 +1742,5 @@ footer.site-footer {
 }
 footer.site-footer p {
   margin: 0;
-  padding: 0;
+  padding: 0 1.125em;
 }
